@@ -3,7 +3,7 @@ package com.mpazi.domain.patient.record;
 public  class  Patient {
     private int phoneNum, age;
     private String patientId,patientName,email,gender,address;
-    private Patient(){}
+    protected Patient(){}
 
     private Patient(Builder builder){
         this.patientId = builder.patientId;
@@ -84,7 +84,7 @@ public  class  Patient {
 
     @Override
     public String toString() {
-        return "Patient{" +
+        return "PatientRepository{" +
                 "patientId=" + patientId + '\'' +
                 ", patientName='" + patientName + '\'' +
                 '}';    }

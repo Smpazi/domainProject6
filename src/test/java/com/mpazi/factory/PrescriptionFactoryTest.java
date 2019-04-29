@@ -9,9 +9,9 @@ public class PrescriptionFactoryTest {
 
     @Test
     public void getPrescriptionTest(){
-        Prescription prescription =PrescriptionFactory.getPrescription("get meds from pharmacy");
+        Prescription prescription =PrescriptionFactory.getPrescription("get meds from any pharmacy");
 
-        assertEquals("get meds from pharmacy",prescription.getPrescriptionAdvice());
+        assertEquals("get meds from any pharmacy",prescription.getPrescriptionAdvice());
     }
 
 }

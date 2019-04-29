@@ -35,7 +35,7 @@ public class Doctor extends ClinicEmployee{
 
     @Override
     public String toString() {
-        return "Doctor{" +
+        return "DoctorRepository{" +
                 "DoctorPracticeNum=" + doc_practiceNum + '\'' +
                 ", DoctorName='" + getEmpName() + '\'' +
                 '}';

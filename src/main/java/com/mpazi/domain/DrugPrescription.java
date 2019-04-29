@@ -2,22 +2,21 @@ package com.mpazi.domain;
 
 public class DrugPrescription {
 
-    int drug_prescriptionId;
-    String drugName;
+    String drugName,drug_prescriptionId;
     String drugType;
     String drugAdvice;
 
     private DrugPrescription() {
     }
 
-    private DrugPrescription (Builder builder){
-        this.drug_prescriptionId=builder.drug_prescriptionId;
+    public DrugPrescription (Builder builder){
+        this.drug_prescriptionId= builder.drug_prescriptionId;
         this.drugName =builder.drugName;
-        this.drugType=builder.drugAdvice;
+        this.drugType=builder.drugType;
         this.drugAdvice=builder.drugAdvice;
     }
 
-    public int getDrug_prescriptionId() {
+    public String getDrug_prescriptionId() {
         return drug_prescriptionId;
     }
 
@@ -34,12 +33,11 @@ public class DrugPrescription {
     }
 
     public static class Builder{
-        int drug_prescriptionId;
-        String drugName;
+        String drugName,drug_prescriptionId;
         String drugType;
         String drugAdvice;
 
-        public Builder drug_prescriptionId(int prescriptionId){
+        public Builder drug_prescriptionId(String prescriptionId){
             this.drug_prescriptionId =drug_prescriptionId;
             return this;
         }

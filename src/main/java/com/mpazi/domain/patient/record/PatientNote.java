@@ -44,7 +44,7 @@ public class PatientNote {
 
     @Override
     public String toString() {
-        return "PatientNote{" +
+        return "PatientNoteRepository{" +
                 "PatientNoteId=" + getPatientNoteId() + '\'' +
                 ", PatientNoteType='" + getPatientNoteType() + '\'' +
                 '}';

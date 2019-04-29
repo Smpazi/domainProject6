@@ -2,8 +2,207 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e76268c-03e2-47f3-9d9d-7d348c27e30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/image/UML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/DrugPrescriptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/PrescriptionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/RecordTempleteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/ReferralLetterTemplateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/SearchPatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/TranferLetterTemplateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/TreatmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/DrugPrescriptionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/PrescriptionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/RecordTempleteRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/ReferralLetterTempleteRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/SearchPatientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TransferLetterTemplateRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TreatmentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/RegistrationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/RoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/UserPasswordResetRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/MedicationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/MedicineRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/PillRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/AppointmentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpPatientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpRecordRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ConsultationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientNoteRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ViewPatientRecordRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ClinicEmployeeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/DoctorRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/NurseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ReceptionistRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/LoginAccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/RegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/UserPasswordResetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/MedicationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/MedicineRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/PillRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/AppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/CheckUpPatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/CheckUpRecordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/ConsultationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/PatientNoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/record/ViewPatientRecordRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/ClinicEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/NurseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/ReceptionistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/DrugPrescriptionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/PrescriptionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/RecordTempleteRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/ReferralLetterTemplateRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/SearchPatientRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/TranferLetterTemplateRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/TreatmentRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/RegistrationRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/RoleRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/UserPasswordResetRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicationRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicineRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/PillRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/AppointmentRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/CheckUpPatientRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/CheckUpRecordRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/ConsultationRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/PatientNoteRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/PatientRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/ViewPatientRecordRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ClinicEmployeeRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/DoctorRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/NurseRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ReceptionistRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/DrugPrescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/DrugPrescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/ReferralLetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/ReferralLetterTemplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/TempleteLetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/TransferLetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/TransferLetterTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/TreatmentHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/Treatment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/clinic/medication/Medication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/clinic/medication/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/clinic/medication/Pill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/CheckUpPatient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/CheckUpPatient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Consultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Consultation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/PatientNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/PatientNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/LoginAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/LoginAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Receptionist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/DrugPrescriptionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/DrugPrescriptionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/ReferralLetterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/ReferralLetterTemplateFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TempleteLetterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TransferLetterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TransferLetterTempleteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentHistoryFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/clinic/medication/factory/MedicationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/MedicationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/clinic/medication/factory/MedicineFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/MedicineFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/clinic/medication/factory/PillFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/PillFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/LoginAccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/LoginAccountFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/AppointmentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/AppointmentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/CheckUpPatientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/CheckUpRecordFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/ConsultationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/ConsultationFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/PatientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/PatientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/PatientNoteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/PatientNoteFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/ViewPatientRecordFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ClinicEmployeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ClinicEmployeeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/DrugPrescriptionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/DrugPrescriptionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/PrescriptionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/PrescriptionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/ReferralLetterFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/ReferralLetterTempleteFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TransferLetterFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TransferLetterTemplateFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentHistoryFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/MedicationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/MedicationFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/MedicineFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/MedicineFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/PillFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/PillFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/LoginAccountFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/LoginAccountFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/AppointmentFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/AppointmentFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/CheckUpPatientFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/CheckUpRecordFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ConsultationFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/ConsultationFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/PatientFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/PatientFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/PatientNoteFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/PatientNoteFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/ViewPatientRecordFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/domainproject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/DrugPrescription$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/DrugPrescription$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/DrugPrescription$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/DrugPrescription.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/DrugPrescription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/ReferralLetter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/ReferralLetter$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/ReferralLetter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TempleteLetter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TransferLetter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TransferLetter$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TransferLetter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TreatmentHistory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TreatmentHistory$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/TreatmentHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medication$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medication$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medicine$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medicine$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Medicine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Pill$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Pill$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/clinic/medication/Pill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Appointment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/CheckUpPatient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/CheckUpPatient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Consultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Consultation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/PatientNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/patient/record/PatientNote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/LoginAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/LoginAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Doctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Receptionist$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Receptionist$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Receptionist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Receptionist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/DrugPrescriptionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/DrugPrescriptionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/ReferralLetterFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/TempleteLetterFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/TransferLetterFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/TreatmentHistoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/clinic/medication/factory/MedicationFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/clinic/medication/factory/MedicineFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/clinic/medication/factory/PillFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/LoginAccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/LoginAccountFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/AppointmentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/CheckUpPatientFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/CheckUpRecordFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/ConsultationFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/PatientFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/PatientNoteFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/ClinicEmployeeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/ClinicEmployeeFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/domainproject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/DrugPrescriptionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/DrugPrescriptionFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/PrescriptionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/PrescriptionFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/ReferralLetterFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TransferLetterFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TreatmentHistoryFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/clinic/medication/factory/MedicationFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/clinic/medication/factory/MedicineFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/clinic/medication/factory/PillFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/LoginAccountFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/AppointmentFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/CheckUpPatientFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/CheckUpRecordFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/ConsultationFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/PatientFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/PatientNoteFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,14 +227,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -46,57 +245,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Doctor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ConsultationFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/LoginAccountFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TempleteDrugFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/ReferralLetter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/clinic/medication/factory/MedicationFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/MedicationFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/MedicineFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/clinic/medication/factory/PillFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/clinic/medication/Pill.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/clinic/medication/factory/PillFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/LoginAccountFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/LoginAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/Registration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/RegistrationFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/RegistrationFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/RoleFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/UserPasswordResetFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/UserPasswordResetFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/AppointmentFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/CheckUpPatient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/PatientNoteFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicationRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/RegistrationRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/RoleRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/UserPasswordResetRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/PrescriptionRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TransferLetterTemplateRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/RegistrationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/RegistrationRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/RoleRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/UserPasswordResetRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/MedicationRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/MedicineRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/medication/PillRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/AppointmentRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpPatientRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpRecordRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ConsultationRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientNoteRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ViewPatientRecordRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/RecordTempleteRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/ReferralLetterTempleteRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/SearchPatientRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/SearchPatientRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/TreatmentRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/DoctorRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/NurseFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/NurseFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Receptionist.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ReceptionistFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/DrugPrescriptionFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/DrugPrescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/Prescription.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/PrescriptionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/DrugPrescriptionFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/PrescriptionFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/RecordTemplete.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/RecordTempleteFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/ReferralLetterFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/ReferralLetterFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/SearchPatientFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/SearchPatientFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TransferLetterFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/TreatmentHistory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentHistoryFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentHistoryFactoryTest.java" />
-        <option value="$USER_HOME$/.m2/settings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/NurseRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ReceptionistRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/RecordTempleteRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/ReferralLetterTemplateRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/SearchPatientRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/TranferLetterTemplateRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/PatientFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/PatientFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/Treatment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TreatmentRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/TreatmentRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ClinicEmployeeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/LoginAccountFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ClinicEmployeeFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ClinicEmployeeRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/LoginAccountFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/PatientRepositoryTest.java" />
       </list>
     </option>
   </component>
@@ -119,10 +318,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="804" />
-    <option name="y" value="38" />
-    <option name="width" value="550" />
-    <option name="height" value="697" />
+    <option name="x" value="1" />
+    <option name="y" value="13" />
+    <option name="width" value="807" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -130,6 +329,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,11 +341,6 @@
             <path>
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,39 +360,33 @@
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555509174175" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556526624609" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../app examples/cputtpapp-master/cputtpapp-master" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -207,11 +397,11 @@
       <recent name="com.mpazi.domain" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.mpazi.factory.clinic.medication.factory" />
-      <recent name="com.mpazi.factory" />
-      <recent name="com.mpazi.factory.login.factory" />
-      <recent name="com.mpazi.factory.users.factory" />
-      <recent name="com.mpazi.factory.patient.record.factory" />
+      <recent name="com.mpazi.repository" />
+      <recent name="com.mpazi.repository.login" />
+      <recent name="com.mpazi.repository.medication" />
+      <recent name="com.mpazi.repository.record" />
+      <recent name="com.mpazi.repository.users" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -227,6 +417,9 @@
       <recent name="com.mpazi.factory" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lomie\Documents\ADP\TERM 2\domainProject6\src\main\java\com\mpazi\repository" />
+      <recent name="C:\Users\Lomie\Documents\ADP\TERM 2\domainProject6\src\main\java\com\mpazi\repository\implementation" />
+      <recent name="C:\Users\Lomie\Documents\ADP\TERM 2\domainProject6\src\main\java\com\mpazi\repository\implementation\clinic\medication\repo\impl" />
       <recent name="C:\Users\Lomie\Documents\ADP\TERM 2\domainproject\src\main\java\com\mpazi\factory" />
       <recent name="C:\Users\Lomie\IdeaProjects\domainproject\src\main\java\com\mpazi\factory" />
     </key>
@@ -243,82 +436,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TreatmentHistoryFactoryTest.getTreatmentHistoryTest">
-    <configuration name="RecordTempleteFactoryTest.getRecordTempleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PatientRepositoryTest.create">
+    <configuration name="LoginAccountRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="PATTERN" value="com.mpazi.repository.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.factory.RecordTempleteFactoryTest" />
-      <option name="METHOD_NAME" value="getRecordTempleteTest" />
+      <option name="PACKAGE_NAME" value="com.mpazi.repository.login" />
+      <option name="MAIN_CLASS_NAME" value="com.mpazi.repository.login.LoginAccountRepositoryTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReferralLetterFactoryTest.getReferralLetterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginAccountRepositoryTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="PATTERN" value="com.mpazi.repository.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.factory.ReferralLetterFactoryTest" />
-      <option name="METHOD_NAME" value="getReferralLetterTest" />
+      <option name="PACKAGE_NAME" value="com.mpazi.repository.login" />
+      <option name="MAIN_CLASS_NAME" value="com.mpazi.repository.login.LoginAccountRepositoryTest" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchPatientFactoryTest.getSearchPatientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginAccountRepositoryTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="PATTERN" value="com.mpazi.repository.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.factory.SearchPatientFactoryTest" />
-      <option name="METHOD_NAME" value="getSearchPatientTest" />
+      <option name="PACKAGE_NAME" value="com.mpazi.repository.login" />
+      <option name="MAIN_CLASS_NAME" value="com.mpazi.repository.login.LoginAccountRepositoryTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransferLetterFactoryTest.getTransferLetterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginAccountRepositoryTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="PATTERN" value="com.mpazi.repository.login.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.factory.TransferLetterFactoryTest" />
-      <option name="METHOD_NAME" value="getTransferLetterTest" />
+      <option name="PACKAGE_NAME" value="com.mpazi.repository.login" />
+      <option name="MAIN_CLASS_NAME" value="com.mpazi.repository.login.LoginAccountRepositoryTest" />
+      <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreatmentHistoryFactoryTest.getTreatmentHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PatientRepositoryTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="PATTERN" value="com.mpazi.repository.record.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.factory.TreatmentHistoryFactoryTest" />
-      <option name="METHOD_NAME" value="getTreatmentHistoryTest" />
+      <option name="PACKAGE_NAME" value="com.mpazi.repository.record" />
+      <option name="MAIN_CLASS_NAME" value="com.mpazi.repository.record.PatientRepositoryTest" />
+      <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -326,11 +519,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TreatmentHistoryFactoryTest.getTreatmentHistoryTest" />
-        <item itemvalue="JUnit.TransferLetterFactoryTest.getTransferLetterTest" />
-        <item itemvalue="JUnit.SearchPatientFactoryTest.getSearchPatientTest" />
-        <item itemvalue="JUnit.ReferralLetterFactoryTest.getReferralLetterTest" />
-        <item itemvalue="JUnit.RecordTempleteFactoryTest.getRecordTempleteTest" />
+        <item itemvalue="JUnit.PatientRepositoryTest.create" />
+        <item itemvalue="JUnit.LoginAccountRepositoryTest.delete" />
+        <item itemvalue="JUnit.LoginAccountRepositoryTest.update" />
+        <item itemvalue="JUnit.LoginAccountRepositoryTest.read" />
+        <item itemvalue="JUnit.LoginAccountRepositoryTest.create" />
       </list>
     </recent_temporary>
   </component>
@@ -356,49 +549,57 @@
       <workItem from="1555500503269" duration="1486000" />
       <workItem from="1555507038131" duration="2328000" />
       <workItem from="1555509719092" duration="93000" />
-      <workItem from="1555510109207" duration="957000" />
+      <workItem from="1555510109207" duration="1412000" />
+      <workItem from="1555572302590" duration="3047000" />
+      <workItem from="1555735139887" duration="1883000" />
+      <workItem from="1555860494619" duration="2794000" />
+      <workItem from="1556097403442" duration="397000" />
+      <workItem from="1556204835131" duration="9072000" />
+      <workItem from="1556401885208" duration="4219000" />
+      <workItem from="1556433055111" duration="38953000" />
+      <workItem from="1556514730569" duration="9616000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DrugPrescriptionFactoryTest_getDrugPrescriptionTest - 2019.04.17 at 08h 50m 12s.xml">
-      <configuration name="DrugPrescriptionFactoryTest.getDrugPrescriptionTest" configurationId="JUnit" />
+    <history-entry file="PatientRepositoryTest_read - 2019.04.29 at 07h 36m 55s.xml">
+      <configuration name="PatientRepositoryTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrescriptionFactoryTest_getPrescriptionTest - 2019.04.17 at 09h 07m 47s.xml">
-      <configuration name="PrescriptionFactoryTest.getPrescriptionTest" configurationId="JUnit" />
+    <history-entry file="PatientRepositoryTest_read - 2019.04.29 at 07h 37m 17s.xml">
+      <configuration name="PatientRepositoryTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RecordTempleteFactoryTest_getRecordTempleteTest - 2019.04.17 at 09h 15m 11s.xml">
-      <configuration name="RecordTempleteFactoryTest.getRecordTempleteTest" configurationId="JUnit" />
+    <history-entry file="ClinicEmployeeFactoryTest_getClinicEmployeeTest - 2019.04.29 at 10h 24m 29s.xml">
+      <configuration name="ClinicEmployeeFactoryTest.getClinicEmployeeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReferralLetterFactoryTest_getReferralLetterTest - 2019.04.17 at 09h 18m 34s.xml">
-      <configuration name="ReferralLetterFactoryTest.getReferralLetterTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountFactoryTest_getLogAccountTest - 2019.04.29 at 10h 24m 48s.xml">
+      <configuration name="LoginAccountFactoryTest.getLogAccountTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPatientFactoryTest_getSearchPatientTest - 2019.04.17 at 09h 21m 51s.xml">
-      <configuration name="SearchPatientFactoryTest.getSearchPatientTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountRepositoryTest_create - 2019.04.29 at 10h 25m 55s.xml">
+      <configuration name="LoginAccountRepositoryTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPatientFactoryTest_getSearchPatientTest - 2019.04.17 at 09h 22m 24s.xml">
-      <configuration name="SearchPatientFactoryTest.getSearchPatientTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountRepositoryTest_read - 2019.04.29 at 10h 26m 04s.xml">
+      <configuration name="LoginAccountRepositoryTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchPatientFactoryTest_getSearchPatientTest - 2019.04.17 at 09h 23m 11s.xml">
-      <configuration name="SearchPatientFactoryTest.getSearchPatientTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountRepositoryTest_update - 2019.04.29 at 10h 26m 26s.xml">
+      <configuration name="LoginAccountRepositoryTest.update" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TransferLetterFactoryTest_getTransferLetterTest - 2019.04.17 at 09h 25m 39s.xml">
-      <configuration name="TransferLetterFactoryTest.getTransferLetterTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountRepositoryTest_delete - 2019.04.29 at 10h 26m 33s.xml">
+      <configuration name="LoginAccountRepositoryTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreatmentHistoryFactoryTest_getTreatmentHistoryTest - 2019.04.17 at 09h 31m 32s.xml">
-      <configuration name="TreatmentHistoryFactoryTest.getTreatmentHistoryTest" configurationId="JUnit" />
+    <history-entry file="LoginAccountRepositoryTest_delete - 2019.04.29 at 10h 26m 51s.xml">
+      <configuration name="LoginAccountRepositoryTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TreatmentHistoryFactoryTest_getTreatmentHistoryTest - 2019.04.17 at 09h 31m 52s.xml">
-      <configuration name="TreatmentHistoryFactoryTest.getTreatmentHistoryTest" configurationId="JUnit" />
+    <history-entry file="PatientRepositoryTest_create - 2019.04.29 at 10h 29m 42s.xml">
+      <configuration name="PatientRepositoryTest.create" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97377000" />
+    <option name="totallyTimeSpent" value="167813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,7 +608,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3633388" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +618,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32569557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -429,7 +630,7 @@
       <window_info anchor="right" id="Maven" order="8" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28895614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -438,17 +639,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3633388" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32810047" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -467,7 +668,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactoryTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/CheckUpPatientFactoryTest.java</url>
           <line>10</line>
           <properties class="com.mpazi.factory.patient.record.factory.CheckUpPatientFactoryTest" method="getCheckUpPatientTest">
             <option name="EMULATED" value="true" />
@@ -480,405 +681,536 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/PatientFactoryTest.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/RoleFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/DrugPrescriptionRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="152">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/UserPasswordResetFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/AppointmentRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+        <state relative-caret-position="279">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/UserPasswordResetFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/UserPasswordReset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-          <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1326#1327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/AppointmentFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/PrescriptionRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+          <caret line="18" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/CheckUpPatient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpPatientRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state relative-caret-position="286">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/CheckUpRecordRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="65" />
+        <state relative-caret-position="555">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpPatientFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ConsultationRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        <state relative-caret-position="480">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+          <folding>
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/CheckUpRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientNoteRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="519">
+          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+          <folding>
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/ViewPatientRecordRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="257">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/CheckUpRecordFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/RecordTempleteRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="112">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Consultation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/ReferralLetterTempleteRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-401">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="49" />
+        <state relative-caret-position="494">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <folding>
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1277#1278#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ConsultationFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/SearchPatientRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding>
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/SearchPatientRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/TranferLetterTemplateRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/PatientFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TransferLetterTemplateRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="87" lean-forward="true" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/DoctorRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Receptionist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/NurseRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ReceptionistRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/PrescriptionRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="7" selection-start-line="15" selection-start-column="4" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/ReferralLetterTemplateRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/PatientNoteFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/SearchPatientRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/PatientNoteFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/TranferLetterTemplateRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/RecordTempleteRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/record/PatientRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/record/factory/PatientFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/TreatmentRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/DrugPrescriptionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/patient/record/factory/ViewPatientRecordFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/TreatmentRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="395">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/ViewPatientRecord.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/Treatment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="49">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/DoctorFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/TreatmentRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="325">
+          <caret line="47" column="42" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/DrugPrescriptionRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/register/login/LoginAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-517">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ClinicEmployeeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/login/factory/LoginAccountFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ClinicEmployeeRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/DrugPrescriptionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="82" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/login/factory/LoginAccountFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/ClinicEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="57" column="37" lean-forward="true" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/users/ClinicEmployeeRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ClinicEmployeeFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ClinicEmployeeFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/NurseFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/NurseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ReceptionistFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Receptionist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
-          <folding>
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ReceptionistFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/DrugPrescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
-          <folding>
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/Prescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="32" />
-          <folding>
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-          </folding>
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/DrugPrescriptionFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="170">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/DrugPrescriptionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/PrescriptionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/RecordTemplete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="56" column="28" lean-forward="true" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-          <folding>
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/RecordTempleteFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/RegistrationRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/ReferralLetter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/ReferralLetterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/SearchPatientFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state relative-caret-position="876">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/SearchPatient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/TransferLetterFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/AppointmentRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/TreatmentHistoryFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Patient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="-60">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/TreatmentHistory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/record/PatientRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="239">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/TempleteLetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/TreatmentHistoryFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/record/factory/PatientFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/RecordTempleteFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/PrescriptionFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/ReferralLetterFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/SearchPatientFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/TransferLetterFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.m2/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

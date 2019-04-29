@@ -64,7 +64,7 @@ public class LoginAccount {
 
     @Override
     public String toString() {
-        return "LoginAccount{" +
+        return "LoginAccountRepository{" +
                 "UserId=" + getStaffId() + '\'' +
                 '}';
     }

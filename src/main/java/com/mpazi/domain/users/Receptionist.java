@@ -13,6 +13,11 @@ public class Receptionist extends ClinicEmployee {
 
     }
 
+    @Override
+    public String getEmp_Id() {
+        return super.getEmp_Id();
+    }
+
     public String getJob_type() {
         return job_type;
     }
@@ -33,7 +38,7 @@ public class Receptionist extends ClinicEmployee {
     @Override
     public String toString()
     {
-        return "Receptionist{" +
+        return "ReceptionistRepository{" +
                 "ReceptionistID=" + getEmp_Id() + '\'' +
                 ", Receptionist_JobTitle='" + getJob_type() + '\'' +
                 '}';

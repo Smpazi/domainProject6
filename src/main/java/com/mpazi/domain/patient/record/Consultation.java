@@ -2,11 +2,11 @@ package com.mpazi.domain.patient.record;
 
 import java.util.Date;
 
-public class Consultation {
+public class Consultation extends Patient {
     private String consultId, consult_description;
 
     private Consultation(){
-
+        super();
     }
 
     private Consultation (Builder builder){

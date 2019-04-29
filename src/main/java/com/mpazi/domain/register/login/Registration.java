@@ -41,7 +41,7 @@ public class Registration {
 
     @Override
     public String toString() {
-        return "Registration{" +
+        return "RegistrationRepository{" +
                 "RegistrationId=" + getReg_Id() + '\'' +
                 ", UserName='" + getStaffName() + '\'' +
                 '}';

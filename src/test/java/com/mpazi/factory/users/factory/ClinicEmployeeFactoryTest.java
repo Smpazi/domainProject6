@@ -9,9 +9,9 @@ public class ClinicEmployeeFactoryTest {
     @Test
     public void getClinicEmployeeTest(){
 
-        ClinicEmployee clinicEmployee =ClinicEmployeeFactory.getClinicEmployee();
+        ClinicEmployee clinicEmployee =ClinicEmployeeFactory.getClinicEmployee("",045667);
 
-        //assertEquals();
+        assertEquals(045667,clinicEmployee.getEmpPhoneNum());
 
     }
 

@@ -1,16 +1,28 @@
 package com.mpazi.factory;
 
 import com.mpazi.domain.DrugPrescription;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
 public class DrugPrescriptionFactoryTest {
+    Map<String,String> values;
+    @Before
+    public void setUp() throws Exception {
+        values = new HashMap<>();
+        values.put("drug_prescriptionId", "123");
+        values.put("drugName","Panado");
+    }
+
     @Test
     public void getDrugPrescriptionTest(){
-        DrugPrescription drugPrescription =DrugPrescriptionFactory.getDrugPrescription(324,"B co");
+        DrugPrescription drugPrescription =DrugPrescriptionFactory.getDrugPrescription(values,"Headache");
 
-        assertEquals("B co", (drugPrescription.getDrugName()));
+        assertEquals("Headache",drugPrescription.getDrugType());
     }
 
 }

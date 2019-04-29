@@ -14,6 +14,11 @@ public class Nurse extends ClinicEmployee {
     }
 
     @Override
+    public String getEmp_Id() {
+        return super.getEmp_Id();
+    }
+
+    @Override
     public String getEmpName() {
         return super.getEmpName();
     }
@@ -39,7 +44,7 @@ public class Nurse extends ClinicEmployee {
 
     @Override
     public String toString() {
-        return "Nurse{" +
+        return "NurseRepository{" +
                 ", NurseType='" + getNursing_type() + '\'' +
                 '}';
     }

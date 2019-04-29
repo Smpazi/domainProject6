@@ -50,7 +50,7 @@ public class Role {
 
     @Override
     public String toString() {
-        return "Role{" +
+        return "RoleRepository{" +
                 "=" + getRoleTitle() + '\'' +
                 '}';        }
 }

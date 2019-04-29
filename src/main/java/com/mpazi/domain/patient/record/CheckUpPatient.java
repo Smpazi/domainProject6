@@ -2,7 +2,7 @@ package com.mpazi.domain.patient.record;
 
 import java.util.Date;
 
-public class CheckUpPatient {
+public class CheckUpPatient extends Patient {
     private String checkUpId, checkUpName;
     private Date returnDate;
 

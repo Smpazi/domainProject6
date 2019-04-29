@@ -10,7 +10,7 @@ public class LoginAccountFactoryTest {
     @Test
     public void getLogAccountTest(){
 
-        LoginAccount loginAccount =LoginAccountFactory.getLoginAccount("CD123");
+        LoginAccount loginAccount =LoginAccountFactory.getLoginAccount("CD123",1234);
 
         assertEquals("CD123",loginAccount.getStaffId());
 
