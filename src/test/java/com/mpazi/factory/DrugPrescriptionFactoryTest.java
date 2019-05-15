@@ -1,6 +1,7 @@
 package com.mpazi.factory;
 
-import com.mpazi.domain.DrugPrescription;
+import com.mpazi.domain.medication.DrugPrescription;
+import com.mpazi.factory.other.factory.DrugPrescriptionFactory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,7 +21,7 @@ public class DrugPrescriptionFactoryTest {
 
     @Test
     public void getDrugPrescriptionTest(){
-        DrugPrescription drugPrescription =DrugPrescriptionFactory.getDrugPrescription(values,"Headache");
+        DrugPrescription drugPrescription = DrugPrescriptionFactory.getDrugPrescription(values,"Headache");
 
         assertEquals("Headache",drugPrescription.getDrugType());
     }

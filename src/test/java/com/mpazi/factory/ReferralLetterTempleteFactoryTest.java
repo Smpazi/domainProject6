@@ -1,6 +1,7 @@
 package com.mpazi.factory;
 
-import com.mpazi.domain.ReferralLetterTemplete;
+import com.mpazi.domain.templete.ReferralLetterTemplete;
+import com.mpazi.factory.other.factory.ReferralLetterTemplateFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

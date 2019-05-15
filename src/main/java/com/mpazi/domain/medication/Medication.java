@@ -1,7 +1,9 @@
 package com.mpazi.domain.medication;
 
-public class Medication{
-    private String med_Id, med_Name, med_desription;
+import java.util.Objects;
+
+public class  Medication{
+    private String med_Id, med_Name, med_description;
 
     protected Medication(){
     }
@@ -9,7 +11,7 @@ public class Medication{
     private Medication (Builder builder){
         this.med_Id =builder.med_Id;
         this.med_Name =builder.med_Name;
-        this.med_desription =builder.med_desription;
+        this.med_description =builder.med_description;
     }
 
     public String getMed_Id() {
@@ -21,11 +23,11 @@ public class Medication{
     }
 
     public String getMed_desription() {
-        return med_desription;
+        return med_description;
     }
 
     public static class Builder{
-        private String med_Id, med_Name, med_desription;
+        private String med_Id, med_Name, med_description;
 
         public Builder med_Id(String med_Id){
             this.med_Id =med_Id;
@@ -36,8 +38,8 @@ public class Medication{
             this.med_Name = med_Name;
             return this;
         }
-        public Builder med_description(String med_desription){
-            this.med_desription = med_desription;
+        public Builder med_description(String med_description){
+            this.med_description = med_description;
             return this;
         }
 
@@ -49,9 +51,22 @@ public class Medication{
 
     @Override
     public String toString() {
-        return "MedicationRepository{" +
+        return "Medication{" +
                 "MedicationId=" + med_Id + '\'' +
                 ", MedicationName='" + med_Name + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Medication medication = (Medication) o;
+        return med_Id.equals(medication.med_Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(med_Id);
     }
 }

@@ -1,8 +1,9 @@
 package com.mpazi.repository;
 
-import com.mpazi.domain.Prescription;
-import com.mpazi.factory.PrescriptionFactory;
-import com.mpazi.repository.implementation.PrescriptionRepositoryImpl;
+import com.mpazi.domain.medication.Prescription;
+import com.mpazi.factory.other.factory.PrescriptionFactory;
+import com.mpazi.repository.implementation.other.PrescriptionRepositoryImpl;
+import com.mpazi.repository.other.PrescriptionRepository;
 import org.junit.Before;
 import org.junit.Test;
 

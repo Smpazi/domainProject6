@@ -1,6 +1,6 @@
 package com.mpazi.factory.login.factory;
 
-import com.mpazi.domain.register.login.Registration;
+import com.mpazi.domain.login.Registration;
 import com.mpazi.util.Misc;
 
 public class RegistrationFactory {

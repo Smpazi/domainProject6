@@ -1,6 +1,6 @@
 package com.mpazi.repository.implementation.login;
 
-import com.mpazi.domain.register.login.LoginAccount;
+import com.mpazi.domain.login.LoginAccount;
 import com.mpazi.repository.login.LoginAccountRepository;
 
 import java.util.HashSet;
@@ -14,6 +14,13 @@ public class LoginAccountRepositoryImpl implements LoginAccountRepository {
 
     private LoginAccountRepositoryImpl(){
         this.loginAccounts = new HashSet<>();
+    }
+
+    private LoginAccount findAccount(String loginAccountId){
+        return  this.loginAccounts.stream()
+                .filter(loginAccount -> loginAccount.getStaffId().trim().equals(loginAccountId))
+                .findAny()
+                .orElse(null);
     }
 
     public static LoginAccountRepositoryImpl getRepository(){
@@ -35,19 +42,24 @@ public class LoginAccountRepositoryImpl implements LoginAccountRepository {
 
     @Override
     public LoginAccount update(LoginAccount loginAccount) {
-        loginAccounts.add(loginAccount);
-        LoginAccount saveLoginAcc = loginAccount;
-        return saveLoginAcc;
-    }
-
-    @Override
-    public LoginAccount read(String s) {
-       // LoginAccount loginAccount= s
+        LoginAccount saveLoginAcc = findAccount(loginAccount.getStaffId());
+        if(saveLoginAcc != null){
+            this.loginAccounts.remove(saveLoginAcc);
+            return create(loginAccount);
+        }
         return null;
     }
 
     @Override
-    public void delete(String s) {
-        this.loginAccounts.remove(s);
+    public LoginAccount read(final String loginId) {
+       LoginAccount loginAccount= findAccount(loginId);
+        return loginAccount;
+    }
+
+    @Override
+    public void delete(String loginId) {
+        LoginAccount loginAccount= findAccount(loginId);
+        if(loginAccount !=null)
+        this.loginAccounts.remove(loginAccount);
     }
 }

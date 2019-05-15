@@ -44,7 +44,7 @@ public class Nurse extends ClinicEmployee {
 
     @Override
     public String toString() {
-        return "NurseRepository{" +
+        return "NurseService{" +
                 ", NurseType='" + getNursing_type() + '\'' +
                 '}';
     }

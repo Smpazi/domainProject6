@@ -1,40 +1,45 @@
 package com.mpazi.repository.login;
 
-import com.mpazi.domain.register.login.LoginAccount;
+import com.mpazi.domain.login.LoginAccount;
 import com.mpazi.factory.login.factory.LoginAccountFactory;
 import com.mpazi.repository.implementation.login.LoginAccountRepositoryImpl;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.*;
 
 public class LoginAccountRepositoryTest {
 
-    Set<LoginAccount> loginAccounts;
-    LoginAccountRepository repository;
+   private LoginAccountRepository repository;
+    private LoginAccount loginAccount;
 
-    LoginAccount loginAccount;
+    private  LoginAccount getSavedLoginAccount(){
+        Set<LoginAccount> savedAccount = this.repository.getAll();
+        return  savedAccount.iterator().next();
+    }
     @Before
     public void setUp() throws Exception {
-        repository = LoginAccountRepositoryImpl.getRepository();
-        loginAccounts = new HashSet<>();
-        loginAccounts.add(loginAccount);
+        this.repository = LoginAccountRepositoryImpl.getRepository();
+        this.loginAccount = LoginAccountFactory.getLoginAccount("233s",555);
     }
 
     @Test
-    public void create() throws Exception{
-        loginAccount= LoginAccountFactory.getLoginAccount("emp444",333);
-        repository.create(loginAccount);
-        assertEquals(333,loginAccount.getPassword());
+    public void create() {
+        LoginAccount createdAccount = this.repository.create(this.loginAccount);
+        System.out.println("Created = " + createdAccount);
+        assertSame(createdAccount,this.loginAccount);
     }
 
     @Test
-    public void read() throws Exception {
-        loginAccount = repository.read("emp444");
-        assertEquals("emp444",loginAccount.getStaffId());
+    public void read(){
+        LoginAccount savedLoginAcc = getSavedLoginAccount();
+      //  System.out.println("StaffId = " + savedLoginAcc.getStaffId());
+        LoginAccount read = this.repository.read(savedLoginAcc.getStaffId());
+        System.out.println(" read =" + savedLoginAcc.getStaffId());
+
+        assertSame(savedLoginAcc,);
     }
 
     @Test

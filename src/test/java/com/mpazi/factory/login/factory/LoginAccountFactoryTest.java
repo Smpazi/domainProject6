@@ -1,6 +1,6 @@
 package com.mpazi.factory.login.factory;
 
-import com.mpazi.domain.register.login.LoginAccount;
+import com.mpazi.domain.login.LoginAccount;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

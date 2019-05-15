@@ -1,6 +1,7 @@
 package com.mpazi.factory;
 
-import com.mpazi.domain.SearchPatient;
+import com.mpazi.domain.templete.SearchPatient;
+import com.mpazi.factory.other.factory.SearchPatientFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

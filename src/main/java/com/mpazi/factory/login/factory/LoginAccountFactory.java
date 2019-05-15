@@ -1,7 +1,6 @@
 package com.mpazi.factory.login.factory;
 
-import com.mpazi.domain.register.login.LoginAccount;
-import com.mpazi.domain.register.login.Role;
+import com.mpazi.domain.login.LoginAccount;
 
 public class LoginAccountFactory {
 

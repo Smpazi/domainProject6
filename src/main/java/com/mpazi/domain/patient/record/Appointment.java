@@ -55,7 +55,7 @@ public class Appointment {
 
     @Override
     public String toString() {
-        return "AppointmentRepository{" +
+        return "AppointmentService{" +
                 "ApppintmentDate=" + getAppointmentDate() + '\''  +
                 '}';  }
 }

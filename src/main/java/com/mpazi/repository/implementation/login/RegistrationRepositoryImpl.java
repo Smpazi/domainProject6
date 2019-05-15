@@ -1,6 +1,6 @@
 package com.mpazi.repository.implementation.login;
 
-import com.mpazi.domain.register.login.Registration;
+import com.mpazi.domain.login.Registration;
 import com.mpazi.repository.login.RegistrationRepository;
 
 import java.util.HashSet;

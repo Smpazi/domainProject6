@@ -1,6 +1,7 @@
 package com.mpazi.factory;
 
-import com.mpazi.domain.Treatment;
+import com.mpazi.domain.templete.Treatment;
+import com.mpazi.factory.other.factory.TreatmentFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

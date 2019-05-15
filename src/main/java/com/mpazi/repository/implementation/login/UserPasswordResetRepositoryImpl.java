@@ -1,6 +1,6 @@
 package com.mpazi.repository.implementation.login;
 
-import com.mpazi.domain.register.login.UserPasswordReset;
+import com.mpazi.domain.login.UserPasswordReset;
 import com.mpazi.repository.login.UserPasswordResetRepository;
 
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package com.mpazi.factory.login.factory;
 
-import com.mpazi.domain.register.login.UserPasswordReset;
+import com.mpazi.domain.login.UserPasswordReset;
 import com.mpazi.util.Misc;
 
 public class UserPasswordResetFactory {

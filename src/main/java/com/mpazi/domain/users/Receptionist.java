@@ -38,7 +38,7 @@ public class Receptionist extends ClinicEmployee {
     @Override
     public String toString()
     {
-        return "ReceptionistRepository{" +
+        return "ReceptionistService{" +
                 "ReceptionistID=" + getEmp_Id() + '\'' +
                 ", Receptionist_JobTitle='" + getJob_type() + '\'' +
                 '}';

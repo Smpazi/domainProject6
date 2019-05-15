@@ -1,8 +1,9 @@
 package com.mpazi.repository;
 
-import com.mpazi.domain.Treatment;
-import com.mpazi.factory.TreatmentFactory;
-import com.mpazi.repository.implementation.TreatmentRepositoryImpl;
+import com.mpazi.domain.templete.Treatment;
+import com.mpazi.factory.other.factory.TreatmentFactory;
+import com.mpazi.repository.implementation.other.TreatmentRepositoryImpl;
+import com.mpazi.repository.other.TreatmentRepository;
 import org.junit.Before;
 import org.junit.Test;
 

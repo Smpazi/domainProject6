@@ -1,6 +1,6 @@
 package com.mpazi.repository.implementation.login;
 
-import com.mpazi.domain.register.login.Role;
+import com.mpazi.domain.login.Role;
 import com.mpazi.repository.login.RoleRepository;
 
 import java.util.ArrayList;

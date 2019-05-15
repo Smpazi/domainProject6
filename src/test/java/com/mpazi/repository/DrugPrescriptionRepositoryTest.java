@@ -1,9 +1,9 @@
 package com.mpazi.repository;
 
-import com.mpazi.domain.DrugPrescription;
-import com.mpazi.factory.DrugPrescriptionFactory;
-import com.mpazi.repository.implementation.DrugPrescriptionRepositoryImpl;
-import javafx.beans.binding.When;
+import com.mpazi.domain.medication.DrugPrescription;
+import com.mpazi.factory.other.factory.DrugPrescriptionFactory;
+import com.mpazi.repository.implementation.other.DrugPrescriptionRepositoryImpl;
+import com.mpazi.repository.other.DrugPrescriptionRepository;
 import org.junit.Before;
 import org.junit.Test;
 

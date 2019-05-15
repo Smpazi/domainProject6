@@ -1,6 +1,6 @@
 package com.mpazi.repository.login;
 
-import com.mpazi.domain.register.login.Registration;
+import com.mpazi.domain.login.Registration;
 import com.mpazi.repository.IRepository;
 
 import java.util.Set;

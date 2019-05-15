@@ -84,7 +84,7 @@ public  class  Patient {
 
     @Override
     public String toString() {
-        return "PatientRepository{" +
+        return "PatientService{" +
                 "patientId=" + patientId + '\'' +
                 ", patientName='" + patientName + '\'' +
                 '}';    }
