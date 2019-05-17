@@ -1,5 +1,7 @@
 package com.mpazi.domain.login;
 
+import java.util.Objects;
+
 public class Registration {
     private String reg_Id, staffName;
 
@@ -42,8 +44,21 @@ public class Registration {
     @Override
     public String toString() {
         return "RegistrationService{" +
-                "RegistrationId=" + getReg_Id() + '\'' +
-                ", UserName='" + getStaffName() + '\'' +
+                "RegistrationId= " + getReg_Id() + '\'' +
+                "UserName= " + getStaffName() + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Registration registration = (Registration) o;
+        return reg_Id.equals(registration.reg_Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(reg_Id);
     }
 }

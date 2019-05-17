@@ -2,22 +2,20 @@ package com.mpazi.domain.medication;
 
 import java.util.Objects;
 
-public class Pill extends Medication {
+public class Pill {
     private int pillQuantity;
+
+    private Medication medication = new Medication();
 
     private Pill(){
 
     }
 
     private Pill (Builder builder){
-        super();
         this.pillQuantity =builder.pillQuantity;
     }
 
-    @Override
-    public String getMed_Id() {
-        return super.getMed_Id();
-    }
+
 
     public int getPillQuantity() {
         return pillQuantity;
@@ -25,7 +23,7 @@ public class Pill extends Medication {
 
     public static class Builder{
         private int pillQuantity;
-        private String pill_ID;
+       // private String pill_ID;
 
         public Builder pillQuantity(int pillQuantity){
             this.pillQuantity =pillQuantity;
@@ -43,9 +41,11 @@ public class Pill extends Medication {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Pill{" + medication.toString() +
+                ", PillQuantity=' " + getPillQuantity() + '\'' +
+                '}';
     }
-    @Override
+   /* @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -56,5 +56,5 @@ public class Pill extends Medication {
     @Override
     public int hashCode() {
         return Objects.hash(getMed_Id());
-    }
+    }*/
 }

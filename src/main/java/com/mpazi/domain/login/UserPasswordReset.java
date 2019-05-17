@@ -1,5 +1,7 @@
 package com.mpazi.domain.login;
 
+import java.util.Objects;
+
 public class UserPasswordReset {
     private String email,userId;
     private int oldPassword,newPassword;
@@ -9,6 +11,10 @@ public class UserPasswordReset {
     }
 
     private UserPasswordReset(Builder builder){
+        this.userId = builder.userId;
+        this.email = builder.email;
+        this.newPassword = builder.newPassword;
+        this.oldPassword = builder.oldPassword;
     }
 
     public String getUserId() {
@@ -55,6 +61,22 @@ public class UserPasswordReset {
     }
     @Override
     public String toString() {
-        return super.toString();
+        return "PasswordReset {" +
+                "UserId = " + getUserId() + '\'' +
+                "Email = " + getEmail() + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserPasswordReset userPasswordReset = (UserPasswordReset) o;
+        return userId.equals(userPasswordReset.userId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userId);
     }
 }

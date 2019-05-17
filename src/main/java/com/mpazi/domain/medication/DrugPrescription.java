@@ -1,5 +1,7 @@
 package com.mpazi.domain.medication;
 
+import java.util.Objects;
+
 public class DrugPrescription {
 
     String drugName,drug_prescriptionId;
@@ -54,7 +56,6 @@ public class DrugPrescription {
             this.drugAdvice = drugAdvice;
             return this;
         }
-
         public DrugPrescription build(){
             return new DrugPrescription(this);
         }
@@ -62,8 +63,22 @@ public class DrugPrescription {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "DrugPrescription {" +
+                "DrugPrescription_Id = " +getDrug_prescriptionId()+ '\'' +
+                "DrugName = " + getDrugName() + '\'' +
+                '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DrugPrescription drugPrescription = (DrugPrescription) o;
+        return drug_prescriptionId.equals(drugPrescription.drug_prescriptionId);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(drug_prescriptionId);
+    }
 }

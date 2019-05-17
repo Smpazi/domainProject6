@@ -3,9 +3,10 @@ package com.mpazi.domain.medication;
 
 import java.util.Objects;
 
-public class Medicine extends Medication {
+public class Medicine {
     private String medicine_genricName,medicine_createdAt;
 
+    private Medication medication = new Medication();
 
     private Medicine(){
     }
@@ -16,10 +17,6 @@ public class Medicine extends Medication {
 
     }
 
-    @Override
-    public String getMed_Id() {
-        return super.getMed_Id();
-    }
 
     public String getMedicine_genricName() {
         return medicine_genricName;
@@ -50,19 +47,21 @@ public class Medicine extends Medication {
 
     @Override
     public String toString() {
-        return "Medicine{" +
-                "MedicineId=" + super.getMed_Id()+ '\'' ;
+        return "Medicine{" + medication.toString() +
+                ", medicine_genricName=' " + getMedicine_genricName() + '\'' +
+                ", medicine_createdAt =' " + getMedicine_createdAt() + '\'' +
+                '}';
     }
-    @Override
+   /* @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Medicine medicine = (Medicine) o;
-        return getMed_Id().equals(medicine.getMed_Id());
+        Medicine med = (Medicine) o;
+        return medication.getMed_Id().equals(med.medication.getMed_Id());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getMed_Id());
-    }
+    }*/
 }

@@ -1,9 +1,10 @@
 package com.mpazi.domain.medication;
 
-public class Prescription {
+import java.util.Objects;
 
-    int prescriptionId;
-    String prescriptionAdvice;
+public class Prescription {
+    String  visitTime, prescriptionId;
+
 
 
     private Prescription() {
@@ -12,28 +13,28 @@ public class Prescription {
     private Prescription (Builder builder){
 
         this.prescriptionId=builder.prescriptionId;
-        this.prescriptionAdvice =builder.prescriptionAdvice;
+        this.visitTime =builder.visitTime;
     }
 
-    public int getPrescriptionId() {
+    public String getPrescriptionId() {
         return prescriptionId;
     }
 
-    public String getPrescriptionAdvice() {
-        return prescriptionAdvice;
+    public String getVisitTime() {
+        return visitTime;
     }
 
     public static class Builder{
-        int prescriptionId;
-        String prescriptionAdvice;
 
-        public Builder prescriptionId(int prescriptionId){
+        String prescriptionId,visitTime;
+
+        public Builder prescriptionId(String prescriptionId){
             this.prescriptionId =prescriptionId;
             return this;
         }
 
-        public Builder prescriptionAdvice(String prescriptionAdvice){
-            this.prescriptionAdvice = prescriptionAdvice;
+        public Builder visitTime(String visitTime){
+            this.visitTime = visitTime;
             return this;
         }
 
@@ -44,6 +45,22 @@ public class Prescription {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Prescription {" +
+                "Prescription_Id = " +getPrescriptionId()+ '\'' +
+                "visitTime = " + getVisitTime() + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Prescription prescription = (Prescription) o;
+        return prescriptionId.equals(prescription.prescriptionId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prescriptionId);
     }
 }

@@ -43,6 +43,8 @@ public class Role {
     @Override
     public String toString() {
         return "RoleService{" +
-                "=" + getRoleTitle() + '\'' +
-                '}';        }
+                "RoleType = " + getRoleTitle() + '\'' +
+                "RoleDescription = " + getRoleDescription() + '\'' +
+                '}';
+    }
 }

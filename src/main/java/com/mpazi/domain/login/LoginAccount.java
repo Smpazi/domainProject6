@@ -1,5 +1,7 @@
 package com.mpazi.domain.login;
 
+import java.util.Objects;
+
 public class LoginAccount {
     private String staffId;
     private int password;
@@ -60,8 +62,22 @@ public class LoginAccount {
     @Override
     public String toString() {
         return "LoginAccountService{" +
-                "StaffId=" + getStaffId() + '\'' +
+                "StaffId = " + getStaffId() + '\'' +
+                "UserPassword = " + getPassword() + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        LoginAccount loginAccount= (LoginAccount) o;
+        return staffId.equals(loginAccount.staffId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(staffId);
     }
 
 }

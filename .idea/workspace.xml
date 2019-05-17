@@ -2,122 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e76268c-03e2-47f3-9d9d-7d348c27e30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/domainProject6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Notification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/UserPasswordReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/UserPasswordReset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medication$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medication$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medicine$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medicine$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medicine.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Medicine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/DrugPrescription$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/DrugPrescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Prescription$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Prescription$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Prescription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/RecordTemplete$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/RecordTemplete$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/RecordTemplete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/ReferralLetterTemplete$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/ReferralLetterTemplete$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/ReferralLetterTemplete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/SearchPatient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/SearchPatient$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/SearchPatient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/TransferLetterTemplate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/TransferLetterTemplate$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/TransferLetterTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Treatment$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Treatment$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/other/Treatment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/LoginAccount$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/LoginAccount$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/LoginAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Registration$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Registration$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Registration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Role$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Role$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/UserPasswordReset$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/UserPasswordReset$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/register/login/UserPasswordReset.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/LoginAccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/LoginAccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/RegistrationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/RegistrationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/RoleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/RoleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/UserPasswordResetFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/login/factory/UserPasswordResetFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/DrugPrescriptionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/DrugPrescriptionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/PrescriptionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/PrescriptionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/RecordTempleteFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/RecordTempleteFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/ReferralLetterTemplateFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/ReferralLetterTemplateFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/SearchPatientFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/SearchPatientFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/TransferLetterTempleteFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/TransferLetterTempleteFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/TreatmentFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/other/factory/TreatmentFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/RegistrationRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/RegistrationRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/RoleRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/RoleRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/UserPasswordResetRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/login/UserPasswordResetRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/DrugPrescriptionRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/DrugPrescriptionRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/PrescriptionRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/PrescriptionRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/RecordTempleteRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/RecordTempleteRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/ReferralLetterTempleteRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/ReferralLetterTempleteRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/SearchPatientRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/SearchPatientRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/TransferLetterTemplateRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/TransferLetterTemplateRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/TreatmentRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/implementation/other/TreatmentRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/LoginAccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/LoginAccountRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/RegistrationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/RegistrationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/RoleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/RoleRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/UserPasswordResetRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/UserPasswordResetRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/DrugPrescriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/DrugPrescriptionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/PrescriptionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/PrescriptionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/RecordTempleteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/RecordTempleteRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/ReferralLetterTemplateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/ReferralLetterTemplateRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/SearchPatientRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/SearchPatientRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/TranferLetterTemplateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/TranferLetterTemplateRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/TreatmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/other/TreatmentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/LoginAccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/LoginAccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/RegistrationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/RegistrationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/RoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/UserPasswordResetServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/login/UserPasswordResetServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/DrugPrescriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/DrugPrescriptionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/PrescriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/PrescriptionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/RecordTempleteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/RecordTempleteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/ReferralLetterTempleteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/ReferralLetterTempleteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/SearchPatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/SearchPatientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/TransferLetterTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/TransferLetterTemplateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/TreatmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/impl/other/TreatmentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/LoginAccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/LoginAccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/RegistrationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/RegistrationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/UserPasswordResetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/UserPasswordResetService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/DrugPrescriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/DrugPrescriptionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/PrescriptionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/PrescriptionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/RecordTempleteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/RecordTempleteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/ReferralLetterTemplateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/ReferralLetterTemplateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/SearchPatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/SearchPatientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/TranferLetterTemplateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/TranferLetterTemplateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/TreatmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/other/TreatmentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/DrugPrescriptionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/DrugPrescriptionFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/PrescriptionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/PrescriptionFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/RecordTempleteFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/RecordTempleteFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/ReferralLetterTempleteFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/ReferralLetterTempleteFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/SearchPatientFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/SearchPatientFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TransferLetterTemplateFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TransferLetterTemplateFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TreatmentFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/TreatmentFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/LoginAccountFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/LoginAccountFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/RegistrationFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/RegistrationFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/RoleFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/RoleFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/UserPasswordResetFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/login/factory/UserPasswordResetFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/DrugPrescriptionRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/DrugPrescriptionRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/PrescriptionRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/PrescriptionRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/TreatmentRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/TreatmentRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/login/LoginAccountRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/login/LoginAccountRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/DrugPrescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/DrugPrescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Prescription.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -145,76 +39,15 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-              <folding>
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-              <folding>
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/UserPasswordReset.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding>
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -224,10 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/PrescriptionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/RecordTempleteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/ReferralLetterTemplateService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/SearchPatientService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/TranferLetterTemplateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/other/TreatmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/MedicationService.java" />
@@ -268,13 +97,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/impl/users/ReceptionistRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/impl/users/ReceptionistServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/implementation/login/LoginAccountRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/login/LoginAccountRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/UserPasswordReset.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/DrugPrescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Prescription.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Notification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medication.java" />
       </list>
     </option>
   </component>
@@ -307,7 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -359,7 +191,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mpazi" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="record" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
@@ -369,12 +201,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mpazi" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="medication" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -393,7 +226,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -567,7 +400,8 @@
       <workItem from="1558003391306" duration="1368000" />
       <workItem from="1558109752458" duration="205000" />
       <workItem from="1558110706689" duration="1048000" />
-      <workItem from="1558112012652" duration="1195000" />
+      <workItem from="1558112012652" duration="8400000" />
+      <workItem from="1558121714981" duration="1516000" />
     </task>
     <servers />
   </component>
@@ -604,13 +438,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212671000" />
+    <option name="totallyTimeSpent" value="221392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -704,21 +537,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/service/impl/record/PatientServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/service/impl/record/ConsultationServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -991,40 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Prescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-          <folding>
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/IRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1109,62 +893,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/DrugPrescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/LoginAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding>
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="433">
+          <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="62" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/login/UserPasswordReset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="444">
+          <caret line="73" column="68" lean-forward="true" selection-start-line="73" selection-start-column="68" selection-end-line="73" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Prescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
             <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/DrugPrescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/patient/record/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medicine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Medication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
