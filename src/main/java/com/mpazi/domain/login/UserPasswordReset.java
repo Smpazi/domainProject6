@@ -9,7 +9,6 @@ public class UserPasswordReset {
     }
 
     private UserPasswordReset(Builder builder){
-
     }
 
     public String getUserId() {

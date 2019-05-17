@@ -1,7 +1,7 @@
 package com.mpazi.domain.login;
 
 public class LoginAccount {
-    private String staffId,userId;
+    private String staffId;
     private int password;
     private Role roleType;
 
@@ -11,7 +11,6 @@ public class LoginAccount {
 
     private LoginAccount (Builder builder){
         this.staffId =builder.staffId;
-        this.userId =builder.userId;
         this.password= builder.password;
         this.roleType =builder.roleType;
 
@@ -21,9 +20,6 @@ public class LoginAccount {
         return staffId;
     }
 
-    public String getUserId() {
-        return userId;
-    }
 
     public int getPassword() {
         return password;
@@ -34,7 +30,7 @@ public class LoginAccount {
     }
 
     public static class Builder{
-        private String staffId,userId;
+        private String staffId;
         private int password;
         private Role roleType;
 
@@ -64,7 +60,8 @@ public class LoginAccount {
     @Override
     public String toString() {
         return "LoginAccountService{" +
-                "UserId=" + getStaffId() + '\'' +
+                "StaffId=" + getStaffId() + '\'' +
                 '}';
     }
+
 }
