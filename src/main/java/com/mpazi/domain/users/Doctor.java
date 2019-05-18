@@ -1,8 +1,10 @@
 package com.mpazi.domain.users;
 
-public class Doctor extends ClinicEmployee{
+public class Doctor {
 
     private String doc_practiceNum;
+
+    private ClinicEmployee clinicEmployee = new ClinicEmployee();
 
     private Doctor() {
 
@@ -36,8 +38,8 @@ public class Doctor extends ClinicEmployee{
     @Override
     public String toString() {
         return "DoctorService{" +
+                ", DoctorName='" + clinicEmployee.getEmpName() + '\'' +
                 "DoctorPracticeNum=" + doc_practiceNum + '\'' +
-                ", DoctorName='" + getEmpName() + '\'' +
                 '}';
     }
 

@@ -2,7 +2,7 @@ package com.mpazi.repository.users;
 
 import com.mpazi.domain.users.ClinicEmployee;
 import com.mpazi.factory.users.factory.ClinicEmployeeFactory;
-import com.mpazi.repository.implementation.users.ClinicEmployeeRepositoryImpl;
+import com.mpazi.repository.users.impl.ClinicEmployeeRepositoryImpl;
 import org.junit.Before;
 import org.junit.Test;
 

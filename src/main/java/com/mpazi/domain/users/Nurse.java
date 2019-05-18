@@ -2,36 +2,30 @@ package com.mpazi.domain.users;
 
 import java.util.Date;
 
-public class Nurse extends ClinicEmployee {
-    private String nursing_type;
+public class Nurse  {
+    private String nursing_Department;
+
+    private ClinicEmployee clinicEmployee = new ClinicEmployee();
+
     private Nurse(){
 
     }
 
     private Nurse (Builder builder){
-        super();
-        this.nursing_type=builder.nursing_type;
+
+        this.nursing_Department=builder.nursing_Department;
     }
 
-    @Override
-    public String getEmp_Id() {
-        return super.getEmp_Id();
-    }
 
-    @Override
-    public String getEmpName() {
-        return super.getEmpName();
-    }
-
-    public String getNursing_type() {
-        return nursing_type;
+    public String getNursing_Department() {
+        return nursing_Department;
     }
 
     public static class Builder{
-        private String nursing_type;
+        private String nursing_Department;
 
-        public Builder nursing_type(String nursing_type){
-            this.nursing_type =nursing_type;
+        public Builder nursing_Department(String nursing_Department){
+            this.nursing_Department =nursing_Department;
             return this;
         }
 
@@ -45,7 +39,8 @@ public class Nurse extends ClinicEmployee {
     @Override
     public String toString() {
         return "NurseService{" +
-                ", NurseType='" + getNursing_type() + '\'' +
+                ", NurseName=' " + clinicEmployee.getEmpName() + '\'' +
+                ", Nursing_Department=' " + getNursing_Department() + '\'' +
                 '}';
     }
 }

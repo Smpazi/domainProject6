@@ -6,7 +6,7 @@ public class NurseFactory extends ClinicEmployeeFactory {
 
     public static Nurse getNurse(String nursing_type){
         return new Nurse.Builder()
-                .nursing_type(nursing_type)
+                .nursing_Department(nursing_type)
                 .build();
 
     }

@@ -5,7 +5,8 @@ import com.mpazi.domain.medication.Pill;
 public class PillFactory {
 
     public static Pill getPill(int numQuantity){
-        return new Pill.Builder().pillQuantity(numQuantity)
+        return new Pill.Builder()
+                .pillQuantity(numQuantity)
                 .build();
 
     }

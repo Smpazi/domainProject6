@@ -1,7 +1,9 @@
 package com.mpazi.domain.users;
 
-public class Receptionist extends ClinicEmployee {
+public class Receptionist  {
     private String job_type;
+
+    private ClinicEmployee clinicEmployee = new ClinicEmployee();
 
     private Receptionist(){
 
@@ -13,10 +15,6 @@ public class Receptionist extends ClinicEmployee {
 
     }
 
-    @Override
-    public String getEmp_Id() {
-        return super.getEmp_Id();
-    }
 
     public String getJob_type() {
         return job_type;
@@ -39,8 +37,9 @@ public class Receptionist extends ClinicEmployee {
     public String toString()
     {
         return "ReceptionistService{" +
-                "ReceptionistID=" + getEmp_Id() + '\'' +
+                "ReceptionistID=" +clinicEmployee.getEmp_Id() + '\'' +
                 ", Receptionist_JobTitle='" + getJob_type() + '\'' +
                 '}';
     }
+
 }

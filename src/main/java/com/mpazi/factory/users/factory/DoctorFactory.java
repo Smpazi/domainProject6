@@ -6,7 +6,8 @@ import com.mpazi.util.Misc;
 public class DoctorFactory {
 
     public static Doctor getDoctor(String docPracticeNum){
-        return new Doctor.Builder().doc_practiceNum(docPracticeNum)
+        return new Doctor.Builder()
+                .doc_practiceNum(docPracticeNum)
                 .build();
     }
 }

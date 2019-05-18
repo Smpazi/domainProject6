@@ -2,7 +2,7 @@ package com.mpazi.repository.login;
 
 import com.mpazi.domain.login.LoginAccount;
 import com.mpazi.factory.login.factory.LoginAccountFactory;
-import com.mpazi.repository.implementation.login.LoginAccountRepositoryImpl;
+import com.mpazi.repository.login.impl.LoginAccountRepositoryImpl;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -5,8 +5,6 @@ import java.util.Objects;
 public class Prescription {
     String  visitTime, prescriptionId;
 
-
-
     private Prescription() {
     }
 
@@ -47,7 +45,7 @@ public class Prescription {
     public String toString() {
         return "Prescription {" +
                 "Prescription_Id = " +getPrescriptionId()+ '\'' +
-                "visitTime = " + getVisitTime() + '\'' +
+                "VisitTime = " + getVisitTime() + '\'' +
                 '}';
     }
 

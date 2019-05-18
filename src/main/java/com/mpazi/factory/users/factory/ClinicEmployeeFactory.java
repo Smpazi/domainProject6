@@ -2,11 +2,13 @@ package com.mpazi.factory.users.factory;
 
 import com.mpazi.domain.users.ClinicEmployee;
 
+import java.util.Map;
+
 public class ClinicEmployeeFactory {
 
-    public static ClinicEmployee getClinicEmployee(String emp_ID, int emphoneNum){
+    public static ClinicEmployee getClinicEmployee(Map<String, String> value, int emphoneNum){
         return new ClinicEmployee.Builder()
-                .emp_Id(emp_ID)
+                .emp_Id(value.get("Employee_ID"))
                 .empPhoneNum(emphoneNum)
                 .build();
 

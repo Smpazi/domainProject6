@@ -1,5 +1,7 @@
 package com.mpazi.domain.users;
 
+import java.util.Objects;
+
 public class ClinicEmployee {
 
     private String emp_Id,empName, empEmail;
@@ -58,6 +60,30 @@ public class ClinicEmployee {
         public ClinicEmployee build(){
             return new ClinicEmployee(this);
         }
+
+
+    }
+    @Override
+    public String toString() {
+        return "Employee{" +
+                ", Employee_Id =' " + getEmp_Id() + '\'' +
+                ", Employee_Name =' " + getEmpName() + '\'' +
+                ", EmpPhone_Num =' " + getEmpPhoneNum() + '\'' +
+                ", Employee_Email =' " + getEmpEmail() + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ClinicEmployee clinicEmployee = (ClinicEmployee) o;
+        return emp_Id.equals(clinicEmployee.emp_Id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getEmp_Id());
     }
 
 }
