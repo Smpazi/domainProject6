@@ -48,16 +48,16 @@ public class NurseServiceImplTest {
                 .nursing_Department("BabiesDepartment")
                 .build();
         service.create(appoint);
-        Nurse read = service.read("AS322");
+        Nurse read = service.read("BabiesDepartment");
         System.out.println("In read, read = " +read.getNursing_Department() );
     }
     @Test
     public void update()  {
         Nurse newAppointment = new Nurse.Builder()
-                .nursing_Department(values.get("BabiesDepartment"))
+                .nursing_Department("BabiesDepartment")
                 .build();
         service.update(newAppointment);
-        Nurse updated = service.read("AS322");
+        Nurse updated = service.read("BabiesDepartment");
         assertEquals("BabiesDepartment",updated.getNursing_Department());
     }
 

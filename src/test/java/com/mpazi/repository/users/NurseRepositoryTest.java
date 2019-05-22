@@ -41,16 +41,17 @@ public class NurseRepositoryTest {
                 .nursing_Department("BabiesDepartment")
                 .build();
         repository.create(appoint);
-        Nurse read = repository.read("AS322");
+        Nurse read = repository.read("BabiesDepartment");
+        assertEquals("BabiesDepartment",read.getNursing_Department());
         System.out.println("In read, read = " +read.getNursing_Department() );
     }
     @Test
     public void update()  {
         Nurse newAppointment = new Nurse.Builder()
-                .nursing_Department(values.get("BabiesDepartment"))
+                .nursing_Department("BabiesDepartment")
                 .build();
         repository.update(newAppointment);
-        Nurse updated = repository.read("AS322");
+        Nurse updated = repository.read("BabiesDepartment");
         assertEquals("BabiesDepartment",updated.getNursing_Department());
     }
 

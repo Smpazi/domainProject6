@@ -22,7 +22,7 @@ public class ReceptionistRepositoryTest {
         this.repository = ReceptionistRepositoryImpl.getRepository();
         values = new HashMap<>();
 
-        this.receptionist = ReceptionistFactory.getReceptionist("");
+        this.receptionist = ReceptionistFactory.getReceptionist("Admin");
 
     }
 
@@ -38,30 +38,30 @@ public class ReceptionistRepositoryTest {
     @Test
     public void read() {
         Receptionist appoint = new Receptionist.Builder()
-                .job_type(values.get("NotificationID"))
+                .job_type("Admin")
                 .build();
         repository.create(appoint);
-        Receptionist read = repository.read("AS322");
+        Receptionist read = repository.read("Admin");
+        assertEquals("Admin",read.getJob_type());
+
         System.out.println("In read, read = " +read.getJob_type() );
     }
     @Test
     public void update()  {
         Receptionist receptionist = new Receptionist.Builder()
-                .job_type(values.get("NotificationID"))
+                .job_type("Admin")
                 .build();
         repository.update(receptionist);
-        Receptionist updated = repository.read("AS322");
-        assertEquals("20/May/2019",updated.getJob_type());
+        Receptionist updated = repository.read("Admin");
+        assertEquals("Admin",updated.getJob_type());
     }
-
 
     @Test
     public void delete() {
 
-        this.repository.delete("AS322");
-        Receptionist receptionist= repository.read("AS322");
+        this.repository.delete("Admin");
+        Receptionist receptionist= repository.read("Admin");
         assertNull(receptionist);
-
     }
 
     @Test

@@ -32,7 +32,7 @@ public class ReceptionistServiceImplTest {
         values = new HashMap<>();
 
 
-        this.receptionist = ReceptionistFactory.getReceptionist("");
+        this.receptionist = ReceptionistFactory.getReceptionist("Admin");
 
     }
 
@@ -48,20 +48,22 @@ public class ReceptionistServiceImplTest {
     @Test
     public void read() {
         Receptionist appoint = new Receptionist.Builder()
-                .job_type(values.get("NotificationID"))
+                .job_type("Admin")
                 .build();
         service.create(appoint);
-        Receptionist read = service.read("AS322");
+        Receptionist read = service.read("Admin");
+        assertEquals("Admin",read.getJob_type());
+
         System.out.println("In read, read = " +read.getJob_type() );
     }
     @Test
     public void update()  {
         Receptionist receptionist = new Receptionist.Builder()
-                .job_type(values.get("NotificationID"))
+                .job_type("Admin")
                 .build();
         service.update(receptionist);
-        Receptionist updated = service.read("AS322");
-        assertEquals("20/May/2019",updated.getJob_type());
+        Receptionist updated = service.read("Admin");
+        assertEquals("Admin",updated.getJob_type());
     }
 
 

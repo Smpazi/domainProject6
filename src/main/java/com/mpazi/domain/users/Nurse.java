@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @EntityScan
 public class Nurse  {
+
     private String nursing_Department;
     private ClinicEmployee clinicEmployee = new ClinicEmployee();
 
@@ -35,7 +36,7 @@ public class Nurse  {
     public String toString() {
         return "NurseService{" +
                 ", NurseName=' " + clinicEmployee.getEmpName() + '\'' +
-                ", Nursing_Department=' " + getNursing_Department() + '\'' +
+                ", Nursing_Department=' " + nursing_Department + '\'' +
                 '}';
     }
 }
