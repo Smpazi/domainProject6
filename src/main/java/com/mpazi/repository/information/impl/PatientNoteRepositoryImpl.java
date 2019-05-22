@@ -2,10 +2,11 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.PatientNote;
 import com.mpazi.repository.information.PatientNoteRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+@Repository("InMemoryPatientNote")
 
 public class PatientNoteRepositoryImpl implements PatientNoteRepository {
 
@@ -31,8 +32,9 @@ public class PatientNoteRepositoryImpl implements PatientNoteRepository {
 
     @Override
     public PatientNote update(PatientNote patientNote) {
-        patientNoteTable.put(patientNote.getPatientNoteId(), patientNote);
-        return patientNote;
+        patientNoteTable.put(patientNote.getPatientNoteId(),patientNote);
+        PatientNote savenNotes = patientNoteTable.get(patientNote.getPatientNoteId());
+        return savenNotes;
     }
 
     @Override
@@ -47,7 +49,7 @@ public class PatientNoteRepositoryImpl implements PatientNoteRepository {
     }
 
     @Override
-    public Set<PatientNote> getAll() {
-        return null;
+    public Map<String, PatientNote> getAll() {
+        return patientNoteTable;
     }
 }

@@ -1,18 +1,31 @@
 package com.mpazi.factory.login.factory;
 
 import com.mpazi.domain.login.Registration;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.*;
 
 public class RegistrationFactoryTest {
 
-    @Test
-    public void getRegistrationTest(){
+    Map<String, String> values;
+    @Before
+    public void setUp() throws Exception {
 
-        Registration reg = RegistrationFactory.getRegistration("Derek");
+        values = new HashMap<>();
+        values.put("StaffName","lomie");
 
-        assertEquals("Derek",reg.getStaffName());
     }
+    @Test
+    public void getRegistrationTest() {
 
+        Registration registration = RegistrationFactory.getRegistration(values);
+
+        Assert.assertEquals("lomie",registration.getStaffName());
+
+    }
 }

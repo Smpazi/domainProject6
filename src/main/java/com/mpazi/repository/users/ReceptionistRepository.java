@@ -3,8 +3,8 @@ package com.mpazi.repository.users;
 import com.mpazi.domain.users.Receptionist;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface ReceptionistRepository extends IRepository<Receptionist, String> {
-    Set<Receptionist> getAll();
+    Map<String, Receptionist> getAll();
 }

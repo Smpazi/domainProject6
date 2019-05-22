@@ -2,11 +2,11 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.Patient;
 import com.mpazi.repository.information.PatientRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-
+@Repository("InMemoryPatient")
 public  class PatientRepositoryImpl implements PatientRepository {
 
     private  static  PatientRepositoryImpl repository = null;
@@ -48,7 +48,7 @@ public  class PatientRepositoryImpl implements PatientRepository {
     }
 
     @Override
-    public Set<Patient> getAll() {
-        return null;
+    public Map<String, Patient> getAll() {
+        return patientTable;
     }
 }

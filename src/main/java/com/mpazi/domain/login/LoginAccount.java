@@ -1,7 +1,9 @@
 package com.mpazi.domain.login;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class LoginAccount {
     private String staffId;
     private int password;

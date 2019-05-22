@@ -1,5 +1,8 @@
 package com.mpazi.domain.users;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Receptionist  {
     private String job_type;
 
@@ -10,11 +13,8 @@ public class Receptionist  {
     }
 
     private Receptionist (Builder builder){
-        super();
         this.job_type =builder.job_type;
-
     }
-
 
     public String getJob_type() {
         return job_type;

@@ -2,17 +2,19 @@ package com.mpazi.repository.login.impl;
 
 import com.mpazi.domain.login.Registration;
 import com.mpazi.repository.login.RegistrationRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
+@Repository("InMemoryRegistration")
 
 public class RegistrationRepositoryImpl implements RegistrationRepository {
 
     private  static  RegistrationRepositoryImpl repository = null;
-    private Set<Registration> registrations;
+    private Map<String,Registration> registrations;
 
     private RegistrationRepositoryImpl(){
-        this.registrations = new HashSet<>();
+        this.registrations = new HashMap<>();
     }
 
     public static RegistrationRepositoryImpl getRepository(){
@@ -22,29 +24,32 @@ public class RegistrationRepositoryImpl implements RegistrationRepository {
     }
 
     @Override
-    public Set<Registration> getAll() {
+    public Map<String, Registration> getAll() {
         return this.registrations;
     }
 
     @Override
     public Registration create(Registration registration) {
-        this.registrations.add(registration);
-        return null;
+        registrations.put(registration.getReg_Id(),registration);
+        Registration savedReg = registrations.get(registration.getReg_Id());
+        return savedReg;
     }
 
     @Override
     public Registration update(Registration registration) {
-        return null;
+        registrations.put(registration.getReg_Id(),registration);
+        Registration savedReg = registrations.get(registration.getReg_Id());
+        return savedReg;
     }
 
     @Override
     public Registration read(String s) {
-        return null;
+        Registration registration = registrations.get(s);
+        return registration;
     }
 
     @Override
     public void delete(String s) {
-
-
+        registrations.remove(s);
     }
 }

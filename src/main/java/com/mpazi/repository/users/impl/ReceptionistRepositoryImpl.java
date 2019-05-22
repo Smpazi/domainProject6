@@ -2,10 +2,11 @@ package com.mpazi.repository.users.impl;
 
 import com.mpazi.domain.users.Receptionist;
 import com.mpazi.repository.users.ReceptionistRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+@Repository("InMemoryReceptionist")
 
 public class ReceptionistRepositoryImpl implements ReceptionistRepository {
 
@@ -25,12 +26,16 @@ public class ReceptionistRepositoryImpl implements ReceptionistRepository {
 
     @Override
     public Receptionist create(Receptionist receptionist) {
-        return null;
+        receptionists.put(receptionist.getJob_type(),receptionist);
+        Receptionist saveNurse = receptionists.get(receptionist.getJob_type());
+        return saveNurse;
     }
 
     @Override
     public Receptionist update(Receptionist receptionist) {
-        return null;
+        receptionists.put(receptionist.getJob_type(),receptionist);
+        Receptionist saveNurse = receptionists.get(receptionist.getJob_type());
+        return saveNurse;
     }
 
     @Override
@@ -45,7 +50,7 @@ public class ReceptionistRepositoryImpl implements ReceptionistRepository {
     }
 
     @Override
-    public Set<Receptionist> getAll() {
-        return null;
+    public Map<String, Receptionist> getAll() {
+        return receptionists;
     }
 }

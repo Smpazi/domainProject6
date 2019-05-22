@@ -1,7 +1,9 @@
 package com.mpazi.domain.information;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class CheckUpRecord {
     private String checkUpRecordId, checkUpRecordName, checkUp_description;
 

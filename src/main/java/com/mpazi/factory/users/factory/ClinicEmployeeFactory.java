@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class ClinicEmployeeFactory {
 
-    public static ClinicEmployee getClinicEmployee(Map<String, String> value, int emphoneNum){
+    public static ClinicEmployee getClinicEmployee(Map<String, String> value, long emphoneNum){
         return new ClinicEmployee.Builder()
                 .emp_Id(value.get("Employee_ID"))
                 .empPhoneNum(emphoneNum)

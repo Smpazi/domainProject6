@@ -3,17 +3,19 @@ package com.mpazi.repository.template.impl;
 
 import com.mpazi.domain.template.RecordTemplete;
 import com.mpazi.repository.template.RecordTempleteRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
+@Repository("InMemoryRecordTemplete")
 
 public class RecordTempleteRepositoryImpl implements RecordTempleteRepository {
 
     private  static  RecordTempleteRepositoryImpl repository = null;
-    private Set<RecordTemplete> recordTempletes;
+    private Map<String,RecordTemplete> recordTempletes;
 
     private RecordTempleteRepositoryImpl(){
-        this.recordTempletes= new HashSet<>();
+        this.recordTempletes= new HashMap<>();
     }
 
     public static RecordTempleteRepositoryImpl getRepository(){
@@ -22,20 +24,22 @@ public class RecordTempleteRepositoryImpl implements RecordTempleteRepository {
         return repository;
     }
     @Override
-    public Set<RecordTemplete> getAll() {
+    public Map<String, RecordTemplete> getAll() {
         return this.recordTempletes;
     }
 
     @Override
     public RecordTemplete create(RecordTemplete recordTemplete) {
-        this.recordTempletes.add(recordTemplete);
-        return null;
+        recordTempletes.put(recordTemplete.getTempleteId(),recordTemplete);
+        RecordTemplete savedRecord = recordTempletes.get(recordTemplete.getTempleteId());
+        return savedRecord;
     }
 
     @Override
     public RecordTemplete update(RecordTemplete recordTemplete) {
-        this.recordTempletes.add(recordTemplete);
-        return recordTemplete;
+        recordTempletes.put(recordTemplete.getTempleteId(),recordTemplete);
+        RecordTemplete savedRecord = recordTempletes.get(recordTemplete.getTempleteId());
+        return savedRecord;
     }
 
     @Override
@@ -45,7 +49,7 @@ public class RecordTempleteRepositoryImpl implements RecordTempleteRepository {
 
     @Override
     public RecordTemplete read(String recordTemp_ID) {
-
-        return null;
+        RecordTemplete templete = recordTempletes.get(recordTemp_ID);
+        return templete;
     }
 }

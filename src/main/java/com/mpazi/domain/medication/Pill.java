@@ -1,9 +1,12 @@
 package com.mpazi.domain.medication;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class Pill {
     private int pillQuantity;
+    private String pill_ID;
 
     private Medication medication = new Medication();
 
@@ -13,9 +16,12 @@ public class Pill {
 
     private Pill (Builder builder){
         this.pillQuantity =builder.pillQuantity;
+        this.pill_ID = builder.pill_ID;
     }
 
-
+    public String getPill_ID() {
+        return pill_ID;
+    }
 
     public int getPillQuantity() {
         return pillQuantity;
@@ -23,16 +29,16 @@ public class Pill {
 
     public static class Builder{
         private int pillQuantity;
-       // private String pill_ID;
+       private String pill_ID;
 
         public Builder pillQuantity(int pillQuantity){
             this.pillQuantity =pillQuantity;
             return this;
         }
-      /*  public Builder pill_ID(String pill_ID){
+        public Builder pill_ID(String pill_ID){
             this.pill_ID = pill_ID;
             return this;
-        }*/
+        }
 
         public Pill build(){
             return new Pill(this);
@@ -41,20 +47,10 @@ public class Pill {
 
     @Override
     public String toString() {
-        return "Pill{" + medication.toString() +
+        return "PillController{" +
+                ", Pill_ID=' " + getPill_ID() + '\'' +
                 ", PillQuantity=' " + getPillQuantity() + '\'' +
                 '}';
     }
-   /* @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Pill pill= (Pill) o;
-        return getMed_Id().equals(pill.getMed_Id());
-    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(getMed_Id());
-    }*/
 }

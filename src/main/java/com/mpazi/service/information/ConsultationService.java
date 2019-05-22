@@ -3,9 +3,9 @@ package com.mpazi.service.information;
 import com.mpazi.domain.information.Consultation;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface ConsultationService extends IService<Consultation , String> {
 
-    Set<Consultation> getAll();
+    Map<String, Consultation> getAll();
 }

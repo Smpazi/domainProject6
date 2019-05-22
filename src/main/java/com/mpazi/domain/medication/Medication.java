@@ -1,7 +1,9 @@
 package com.mpazi.domain.medication;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class  Medication{
     private String med_Id, med_Name, med_description;
 
@@ -51,7 +53,7 @@ public class  Medication{
 
     @Override
     public String toString() {
-        return "Medication{" +
+        return "MedicationController{" +
                 "MedicationId=" + med_Id + '\'' +
                 ", MedicationName='" + med_Name + '\'' +
                 '}';

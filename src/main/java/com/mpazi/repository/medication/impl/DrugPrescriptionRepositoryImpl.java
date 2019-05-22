@@ -2,10 +2,11 @@ package com.mpazi.repository.medication.impl;
 
 import com.mpazi.domain.medication.DrugPrescription;
 import com.mpazi.repository.medication.DrugPrescriptionRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+@Repository("InMemoryDrugPrescription")
 
 public class DrugPrescriptionRepositoryImpl implements DrugPrescriptionRepository {
 
@@ -15,30 +16,30 @@ public class DrugPrescriptionRepositoryImpl implements DrugPrescriptionRepositor
     private Map<String, DrugPrescription> drugPrescriptionTable;
 
     private DrugPrescriptionRepositoryImpl(){
-        drugPrescriptionTable= new HashMap<String, DrugPrescription>();
+        drugPrescriptionTable= new HashMap<>();
     }
 
-    public static DrugPrescriptionRepositoryImpl getInstance(){
+    public static DrugPrescriptionRepositoryImpl getRepository(){
         if(repository==null)
             repository = new DrugPrescriptionRepositoryImpl();
         return repository;
     }
    @Override
-    public Set<DrugPrescription> getAll() {
-        return null;
+    public Map<String, DrugPrescription> getAll() {
+        return drugPrescriptionTable;
     }
 
     @Override
     public DrugPrescription create(DrugPrescription drugPrescription) {
-        drugPrescriptionTable.put(String.valueOf(drugPrescription.getDrug_prescriptionId()),drugPrescription);
-        DrugPrescription drugPrescription1 =drugPrescriptionTable.get(drugPrescription.getDrugName());
+        drugPrescriptionTable.put(drugPrescription.getDrug_prescriptionId(),drugPrescription);
+        DrugPrescription drugPrescription1 = drugPrescriptionTable.get(drugPrescription.getDrug_prescriptionId());
         return drugPrescription1;
     }
 
     @Override
     public DrugPrescription update(DrugPrescription drugPrescription) {
-        drugPrescriptionTable.put(String.valueOf(drugPrescription.getDrug_prescriptionId()),drugPrescription);
-        DrugPrescription drugPrescription1 =drugPrescriptionTable.get(drugPrescription.getDrugName());
+        drugPrescriptionTable.put(drugPrescription.getDrug_prescriptionId(),drugPrescription);
+        DrugPrescription drugPrescription1 =drugPrescriptionTable.get(drugPrescription.getDrug_prescriptionId());
         return drugPrescription1;
     }
 
@@ -50,6 +51,6 @@ public class DrugPrescriptionRepositoryImpl implements DrugPrescriptionRepositor
     @Override
     public DrugPrescription read(String id) {
         DrugPrescription drugPrescription = drugPrescriptionTable.get(id);
-        return null;
+        return drugPrescription;
     }
 }

@@ -2,18 +2,18 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.Consultation;
 import com.mpazi.repository.information.ConsultationRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+@Repository("InMemoryConsultation")
 
 public class ConsultationRepositoryImpl implements ConsultationRepository {
 
     private  static  ConsultationRepositoryImpl repository = null;
-    private List<Consultation> consultationList;
+    private Map<String,Consultation> consultationList;
 
     private ConsultationRepositoryImpl(){
-         this.consultationList = new ArrayList<>();
+         this.consultationList = new HashMap<>();
     }
 
     public static ConsultationRepositoryImpl getRepository(){
@@ -24,28 +24,31 @@ public class ConsultationRepositoryImpl implements ConsultationRepository {
 
     @Override
     public Consultation create(Consultation consultation) {
-        this.consultationList.add(consultation);
-        return consultation;
+        consultationList.put(consultation.getConsult_description(),consultation);
+        Consultation savedConsalt = consultationList.get(consultation.getConsult_description());
+        return savedConsalt;
     }
 
     @Override
     public Consultation update(Consultation consultation) {
-        return null;
+        consultationList.put(consultation.getConsult_description(),consultation);
+        Consultation savedConsalt = consultationList.get(consultation.getConsult_description());
+        return savedConsalt;
     }
 
     @Override
     public Consultation read(String s) {
-        return null;
+        Consultation consultation = consultationList.get(s);
+        return consultation ;
     }
 
     @Override
     public void delete(String consultation_ID) {
-
         this.consultationList.remove(consultation_ID);
     }
 
     @Override
-    public Set<Consultation> getAll() {
-        return null;
+    public Map<String, Consultation> getAll() {
+        return this.consultationList;
     }
 }

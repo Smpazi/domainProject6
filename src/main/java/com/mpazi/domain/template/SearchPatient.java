@@ -1,10 +1,11 @@
 package com.mpazi.domain.template;
 
 import com.mpazi.domain.information.Patient;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import java.util.Objects;
 import java.util.Set;
-
+@EntityScan
 public class SearchPatient {
     private String searchId;
     private Set<Patient> patients;

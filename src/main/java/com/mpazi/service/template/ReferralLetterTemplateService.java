@@ -1,10 +1,10 @@
 package com.mpazi.service.template;
 
-import com.mpazi.domain.template.ReferralLetterTemplete;
+import com.mpazi.domain.template.ReferralLetterTemplate;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
-public interface ReferralLetterTemplateService extends IService<ReferralLetterTemplete, String> {
-    Set<ReferralLetterTemplete> getAll();
+public interface ReferralLetterTemplateService extends IService<ReferralLetterTemplate, String> {
+    Map<String, ReferralLetterTemplate> getAll();
 }

@@ -9,7 +9,7 @@ public class UserPasswordResetFactory {
 
     public static UserPasswordReset getUserPasswordReset(Map<String, String> values, int oldPass, int newPass){
         return new UserPasswordReset.Builder()
-                .userId(values.get(Misc.generateId()))
+                .userId(values.get("UserID"))
                 .oldPassword(oldPass)
                 .newPassword(newPass)
                 .build();

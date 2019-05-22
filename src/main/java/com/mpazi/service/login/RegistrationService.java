@@ -3,9 +3,9 @@ package com.mpazi.service.login;
 import com.mpazi.domain.login.Registration;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface RegistrationService extends IService<Registration, String> {
-    Set<Registration> getAll();
+    Map<String, Registration> getAll();
 
 }

@@ -9,7 +9,8 @@ public class AppointmentFactory {
 
     public static Appointment getAppointment(Map<String, String> values){
        return new Appointment.Builder()
-               .appointmentId(values.get(Misc.generateId()))
+                .appointmentId(values.get("AppointmentId"))
+               .appointmentDate(values.get("AppointmentDate"))
                 .appointmentName(values.get("AppointmentName"))
                 .build();
     }

@@ -2,8 +2,10 @@ package com.mpazi.repository.template.impl;
 
 import com.mpazi.domain.template.Treatment;
 import com.mpazi.repository.template.TreatmentRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+@Repository("InMemoryTreatment")
 
 public class TreatmentRepositoryImpl implements TreatmentRepository {
 
@@ -48,7 +50,7 @@ public class TreatmentRepositoryImpl implements TreatmentRepository {
     }
 
     @Override
-    public Set<Treatment> getAll() {
-        return null;
+    public Map<String, Treatment> getAll() {
+        return treatmentTable;
     }
 }

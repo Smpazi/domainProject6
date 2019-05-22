@@ -1,19 +1,28 @@
 package com.mpazi.factory.template.factory;
 
 import com.mpazi.domain.template.TransferLetterTemplate;
-import com.mpazi.factory.template.factory.TransferLetterTempleteFactory;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TransferLetterTemplateFactoryTest {
-    @Test
-    public void getTransferLetterTest(){
+    Map<String, String> values;
+    @Before
+    public void setUp() throws Exception {
 
-        TransferLetterTemplate transferLetterTemplate = TransferLetterTempleteFactory.getTransferLetter("patient needs specialist");
-
-        assertEquals("patient needs specialist", transferLetterTemplate.getTransferNote());
+        values = new HashMap<>();
+        values.put("Transfer_DoctorName","Dr. Sloan");
 
     }
+    @Test
+    public void getTransferLetterTemplateTest() {
 
+        TransferLetterTemplate letterTemplate= TransferLetterTemplateFactory.getTransferLetter(values);
+
+        Assert.assertEquals("Dr. Sloan",letterTemplate.getTransfer_DoctorName());
+
+    }
 }

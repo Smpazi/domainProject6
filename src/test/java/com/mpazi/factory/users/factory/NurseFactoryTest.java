@@ -11,7 +11,7 @@ public class NurseFactoryTest {
     public void getNurseTest(){
         Nurse nurse =NurseFactory.getNurse("wound cleaner");
 
-        assertEquals("wound cleaner",nurse.getNursing_type());
+        assertEquals("wound cleaner",nurse.getNursing_Department());
 
     }
 

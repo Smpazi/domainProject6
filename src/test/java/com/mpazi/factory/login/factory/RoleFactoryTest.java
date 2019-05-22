@@ -1,17 +1,29 @@
 package com.mpazi.factory.login.factory;
 
 import com.mpazi.domain.login.Role;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class RoleFactoryTest {
+    Map<String, String> values;
+    @Before
+    public void setUp() throws Exception {
 
-    @Test
-    public void getRole(){
-        Role role =RoleFactory.getRoleFactory(223);
+        values = new HashMap<>();
+        values.put("RoleTitle","DoctorController");
 
-        assertEquals(223,role.getRoleId());
     }
+    @Test
+    public void getRoleTest() {
 
+        Role role= RoleFactory.getRoleFactory(values);
+
+        Assert.assertEquals("DoctorController",role.getRoleTitle());
+
+    }
 }

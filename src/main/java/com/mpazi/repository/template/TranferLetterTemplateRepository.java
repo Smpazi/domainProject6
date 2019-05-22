@@ -3,8 +3,8 @@ package com.mpazi.repository.template;
 import com.mpazi.domain.template.TransferLetterTemplate;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface TranferLetterTemplateRepository extends IRepository<TransferLetterTemplate, String> {
-    Set<TransferLetterTemplate> getAll();
+    Map<String, TransferLetterTemplate> getAll();
 }

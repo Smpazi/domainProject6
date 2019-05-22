@@ -3,60 +3,86 @@ package com.mpazi.repository.users;
 import com.mpazi.domain.users.ClinicEmployee;
 import com.mpazi.factory.users.factory.ClinicEmployeeFactory;
 import com.mpazi.repository.users.impl.ClinicEmployeeRepositoryImpl;
+import org.junit.Assert;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import static org.junit.Assert.*;
-
+@SpringBootTest
+@RunWith(SpringRunner.class)
+@FixMethodOrder(MethodSorters.JVM)
 public class ClinicEmployeeRepositoryTest {
 
-    Set<ClinicEmployee> clinicEmployees;
-    ClinicEmployeeRepository repository;
+    Map<String, String> values;
+    private ClinicEmployeeRepository repository;
+    private ClinicEmployee clinicEmployee;
 
-    ClinicEmployee clinicEmployee;
     @Before
     public void setUp() throws Exception {
-        repository = ClinicEmployeeRepositoryImpl.getRepository();
-        clinicEmployees = new HashSet<>();
-        clinicEmployees.add(clinicEmployee);
+        this.repository = ClinicEmployeeRepositoryImpl.getRepository();
+        values = new HashMap<>();
+        values.put("Employee_ID","23");
+
+        this.clinicEmployee = ClinicEmployeeFactory.getClinicEmployee(values,7777);
+
     }
 
     @Test
-    public void create() throws Exception{
-        clinicEmployee= ClinicEmployeeFactory.getClinicEmployee("W444",0621423);
-        repository.create(clinicEmployee);
-        assertEquals(0621423, clinicEmployee.getEmpPhoneNum());
-    }
+    public void create() {
+        ClinicEmployee created = this.repository.create(clinicEmployee);
+        System.out.println("In create, created = " + created);
+        repository.create(created);
 
-    @Test
-    public void read() throws Exception {
-        clinicEmployee = repository.read("2222");
-        assertEquals("2222",clinicEmployee.getEmp_Id());
-    }
+        Assert.assertSame(created, this.clinicEmployee);
 
+    }
     @Test
-    public void update() throws Exception{
-        clinicEmployee = repository.read("2222");
-        ClinicEmployee newEmployee = new ClinicEmployee.Builder()
-                .emp_Id("2222")
-                .empPhoneNum(0723456)
+    public void read() {
+        ClinicEmployee appoint = new ClinicEmployee.Builder()
+                .emp_Id(values.get("Employee_ID"))
+                .empPhoneNum(7777)
                 .build();
-        repository.update(newEmployee);
-        ClinicEmployee updateEmplyee = repository.read("2222");
-        assertEquals(0723456,updateEmplyee.getEmpPhoneNum());
+        repository.create(appoint);
+        ClinicEmployee read = repository.read("23");
+        assertEquals(7777,read.getEmpPhoneNum());
+
+        System.out.println("In read, read = " +read.getEmpPhoneNum() );
+    }
+    @Test
+    public void update()  {
+        ClinicEmployee newAppointment = new ClinicEmployee.Builder()
+                .emp_Id(values.get("Employee_ID"))
+                .empPhoneNum(044444)
+                .build();
+        repository.update(newAppointment);
+        ClinicEmployee updated = repository.read("23");
+        assertEquals(044444,updated.getEmpPhoneNum());
+    }
+
+
+    @Test
+    public void delete() {
+
+        this.repository.delete("23");
+        ClinicEmployee notification= repository.read("23");
+        assertNull(notification);
+
     }
 
     @Test
-    public void delete() throws Exception{
-        repository.delete("2222");
-        clinicEmployees.remove("2222");
-        clinicEmployee= repository.read("2222");
-        assertNull(clinicEmployees);
+    public void  getAll(){
+        Map<String,ClinicEmployee> all = this.repository.getAll();
+        System.out.println(all);
     }
-
-
 
 }

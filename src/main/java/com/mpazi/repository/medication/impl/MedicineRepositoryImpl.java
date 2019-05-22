@@ -3,10 +3,11 @@ package com.mpazi.repository.medication.impl;
 
 import com.mpazi.domain.medication.Medicine;
 import com.mpazi.repository.medication.MedicineRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+@Repository("InMemoryMedicine")
 
 public class MedicineRepositoryImpl implements MedicineRepository {
 
@@ -25,15 +26,15 @@ public class MedicineRepositoryImpl implements MedicineRepository {
 
     @Override
     public Medicine create(Medicine medicine) {
-        medicineTable.put(medicine.getMedicine_genricName(),medicine);
-        Medicine saveMedicine = medicineTable.get(medicine.getMedicine_genricName());
+        medicineTable.put(medicine.getMed_Id(),medicine);
+        Medicine saveMedicine = medicineTable.get(medicine.getMed_Id());
         return saveMedicine;
     }
 
     @Override
     public Medicine update(Medicine medicine) {
-        medicineTable.put(medicine.getMedicine_genricName(),medicine);
-        Medicine updateMedicine = medicineTable.get(medicine.getMedicine_genricName());
+        medicineTable.put(medicine.getMed_Id(),medicine);
+        Medicine updateMedicine = medicineTable.get(medicine.getMed_Id());
         return updateMedicine;
     }
 
@@ -49,7 +50,7 @@ public class MedicineRepositoryImpl implements MedicineRepository {
     }
 
     @Override
-    public Set<Medicine> getAll() {
-        return null;
+    public Map<String, Medicine> getAll() {
+        return medicineTable;
     }
 }

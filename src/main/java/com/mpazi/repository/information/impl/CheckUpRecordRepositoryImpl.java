@@ -2,17 +2,19 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.CheckUpRecord;
 import com.mpazi.repository.information.CheckUpRecordRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
+@Repository("InMemoryCheckUpRecord")
 
 public class CheckUpRecordRepositoryImpl implements CheckUpRecordRepository {
 
     private  static  CheckUpRecordRepositoryImpl repository = null;
-    private Set<CheckUpRecord> checkUpRecords;
+    private Map<String, CheckUpRecord> checkUpRecords;
 
     private CheckUpRecordRepositoryImpl(){
-        this.checkUpRecords = new HashSet<>();
+        this.checkUpRecords = new HashMap<>();
     }
 
     public static CheckUpRecordRepositoryImpl getRepository(){
@@ -23,18 +25,22 @@ public class CheckUpRecordRepositoryImpl implements CheckUpRecordRepository {
 
     @Override
     public CheckUpRecord create(CheckUpRecord checkUpRecord) {
-        this.checkUpRecords.add(checkUpRecord);
-        return checkUpRecord;
+        checkUpRecords.put(checkUpRecord.getCheckUpRecordId(),checkUpRecord);
+        CheckUpRecord savedCheckUpRecord = checkUpRecords.get(checkUpRecord.getCheckUpRecordId());
+        return savedCheckUpRecord;
     }
 
     @Override
     public CheckUpRecord update(CheckUpRecord checkUpRecord) {
-        return null;
+        checkUpRecords.put(checkUpRecord.getCheckUpRecordId(),checkUpRecord);
+        CheckUpRecord savedCheckUpRecord = checkUpRecords.get(checkUpRecord.getCheckUpRecordId());
+        return savedCheckUpRecord;
     }
 
     @Override
     public CheckUpRecord read(String s) {
-        return null;
+        CheckUpRecord checkUpRecord = checkUpRecords.get(s);
+        return checkUpRecord;
     }
 
     @Override
@@ -43,7 +49,7 @@ public class CheckUpRecordRepositoryImpl implements CheckUpRecordRepository {
     }
 
     @Override
-    public Set<CheckUpRecord> getAll() {
-        return null;
+    public Map<String, CheckUpRecord> getAll() {
+        return this.checkUpRecords;
     }
 }

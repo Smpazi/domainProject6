@@ -4,8 +4,8 @@ package com.mpazi.service.medication;
 import com.mpazi.domain.medication.Medicine;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface MedicineService extends IService<Medicine, String> {
-    Set<Medicine> getAll();
+    Map<String, Medicine> getAll();
 }

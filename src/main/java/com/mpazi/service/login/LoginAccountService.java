@@ -3,9 +3,9 @@ package com.mpazi.service.login;
 import com.mpazi.domain.login.LoginAccount;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface LoginAccountService extends IService<LoginAccount, String> {
-    Set<LoginAccount> getAll();
+    Map<String, LoginAccount> getAll();
 
 }

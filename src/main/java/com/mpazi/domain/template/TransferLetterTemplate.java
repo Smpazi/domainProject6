@@ -1,7 +1,9 @@
 package com.mpazi.domain.template;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class TransferLetterTemplate {
 
     private String transfer_ID,transferNote,  transfer_DoctorName, transfer_HospitalName;

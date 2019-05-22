@@ -3,8 +3,8 @@ package com.mpazi.service.medication;
 import com.mpazi.domain.medication.Prescription;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface PrescriptionService extends IService<Prescription, String> {
-    Set<Prescription> getAll();
+    Map<String, Prescription> getAll();
 }

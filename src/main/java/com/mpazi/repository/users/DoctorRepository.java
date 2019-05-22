@@ -3,9 +3,9 @@ package com.mpazi.repository.users;
 import com.mpazi.domain.users.Doctor;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface DoctorRepository extends IRepository<Doctor, String> {
-    Set<Doctor> getAll();
+    Map<String, Doctor> getAll();
 
 }

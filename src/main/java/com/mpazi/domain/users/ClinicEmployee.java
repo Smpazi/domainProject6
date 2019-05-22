@@ -1,11 +1,13 @@
 package com.mpazi.domain.users;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class ClinicEmployee {
 
     private String emp_Id,empName, empEmail;
-    private int empPhoneNum;
+    private long empPhoneNum;
 
     protected ClinicEmployee(){
 
@@ -26,7 +28,7 @@ public class ClinicEmployee {
         return empName;
     }
 
-    public int getEmpPhoneNum() {
+    public long getEmpPhoneNum() {
         return empPhoneNum;
     }
 
@@ -36,7 +38,7 @@ public class ClinicEmployee {
 
     public static class Builder{
         private String emp_Id,empName, empEmail;
-        private int empPhoneNum;
+        private long empPhoneNum;
 
         public Builder emp_Id(String emp_Id){
             this.emp_Id = emp_Id;
@@ -52,7 +54,7 @@ public class ClinicEmployee {
             this.empEmail = empEmail;
             return this;
         }
-        public Builder empPhoneNum(int empPhoneNum){
+        public Builder empPhoneNum(long empPhoneNum){
             this.empPhoneNum = empPhoneNum;
             return  this;
         }

@@ -2,8 +2,10 @@ package com.mpazi.repository.users.impl;
 
 import com.mpazi.domain.users.Doctor;
 import com.mpazi.repository.users.DoctorRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+@Repository("InMemoryDoctor")
 
 public class DoctorRepositoryImpl implements DoctorRepository {
 
@@ -46,7 +48,7 @@ public class DoctorRepositoryImpl implements DoctorRepository {
     }
 
     @Override
-    public Set<Doctor> getAll() {
-        return null;
+    public Map<String, Doctor> getAll() {
+        return doctorList;
     }
 }

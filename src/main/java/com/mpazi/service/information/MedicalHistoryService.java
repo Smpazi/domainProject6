@@ -3,8 +3,8 @@ package com.mpazi.service.information;
 import com.mpazi.domain.information.MedicalHistory;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface MedicalHistoryService extends IService <MedicalHistory, String> {
-    Set<MedicalHistory> getAll();
+    Map<String, MedicalHistory> getAll();
 }

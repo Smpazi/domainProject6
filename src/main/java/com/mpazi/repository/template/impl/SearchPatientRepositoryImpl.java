@@ -2,9 +2,11 @@ package com.mpazi.repository.template.impl;
 
 import com.mpazi.domain.template.SearchPatient;
 import com.mpazi.repository.template.SearchPatientRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
+@Repository("InMemorySearchPatient")
 
 public class SearchPatientRepositoryImpl implements SearchPatientRepository {
 
@@ -49,6 +51,7 @@ public class SearchPatientRepositoryImpl implements SearchPatientRepository {
 
     @Override
     public SearchPatient read(String search_ID) {
-        return null;
+        SearchPatient searchPatient =searchTable.get(search_ID);
+        return searchPatient;
     }
 }

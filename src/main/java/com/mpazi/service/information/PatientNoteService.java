@@ -3,9 +3,9 @@ package com.mpazi.service.information;
 import com.mpazi.domain.information.PatientNote;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface PatientNoteService extends IService<PatientNote, String> {
 
-    Set<PatientNote> getAll();
+    Map<String, PatientNote> getAll();
 }

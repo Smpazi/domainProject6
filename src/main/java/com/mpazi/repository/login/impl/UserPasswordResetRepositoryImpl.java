@@ -2,17 +2,19 @@ package com.mpazi.repository.login.impl;
 
 import com.mpazi.domain.login.UserPasswordReset;
 import com.mpazi.repository.login.UserPasswordResetRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
+@Repository("InMemoryUserPasswordReset")
 
 public class UserPasswordResetRepositoryImpl implements UserPasswordResetRepository {
 
     private  static  UserPasswordResetRepositoryImpl repository = null;
-   private Set<UserPasswordReset> userPasswordResets;
+   private Map<String, UserPasswordReset> userPasswordResets;
 
     private UserPasswordResetRepositoryImpl(){
-        this.userPasswordResets = new HashSet<>();
+        this.userPasswordResets = new HashMap<>();
     }
 
     public static UserPasswordResetRepositoryImpl getRepository(){
@@ -22,24 +24,28 @@ public class UserPasswordResetRepositoryImpl implements UserPasswordResetReposit
     }
 
     @Override
-    public Set<UserPasswordReset> getAll() {
+    public Map<String, UserPasswordReset> getAll() {
         return this.userPasswordResets;
     }
 
     @Override
     public UserPasswordReset create(UserPasswordReset userPasswordReset) {
-        this.userPasswordResets.add(userPasswordReset);
-        return userPasswordReset;
+        userPasswordResets.put(userPasswordReset.getUserId(),userPasswordReset);
+        UserPasswordReset savedPass = userPasswordResets.get(userPasswordReset.getUserId());
+        return savedPass;
     }
 
     @Override
     public UserPasswordReset update(UserPasswordReset userPasswordReset) {
-        return userPasswordReset;
+        userPasswordResets.put(userPasswordReset.getUserId(),userPasswordReset);
+        UserPasswordReset savedPass = userPasswordResets.get(userPasswordReset.getUserId());
+        return savedPass;
     }
 
     @Override
     public UserPasswordReset read(String s) {
-        return null;
+        UserPasswordReset userPasswordReset = userPasswordResets.get(s);
+        return userPasswordReset;
     }
 
     @Override

@@ -1,21 +1,18 @@
 package com.mpazi.domain.users;
 
-import java.util.Date;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+@EntityScan
 public class Nurse  {
     private String nursing_Department;
-
     private ClinicEmployee clinicEmployee = new ClinicEmployee();
 
     private Nurse(){
-
     }
 
     private Nurse (Builder builder){
-
         this.nursing_Department=builder.nursing_Department;
     }
-
 
     public String getNursing_Department() {
         return nursing_Department;
@@ -28,8 +25,6 @@ public class Nurse  {
             this.nursing_Department =nursing_Department;
             return this;
         }
-
-
 
         public Nurse build(){
             return new Nurse(this);

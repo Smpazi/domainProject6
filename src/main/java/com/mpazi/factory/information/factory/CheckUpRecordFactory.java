@@ -9,7 +9,7 @@ public class CheckUpRecordFactory {
 
     public static CheckUpRecord getCheckUpRecord(Map<String, String> values){
         return new CheckUpRecord.Builder()
-                .checkUpRecordId(values.get(Misc.generateId()))
+                .checkUpRecordId(values.get("CheckUpRecordId"))
                 .checkUpRecordName(values.get("CheckUpRecordName"))
                 .checkUp_description(values.get("CheckUpDescription"))
                 .build();

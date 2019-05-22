@@ -2,10 +2,11 @@ package com.mpazi.repository.users.impl;
 
 import com.mpazi.domain.users.Nurse;
 import com.mpazi.repository.users.NurseRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+@Repository("InMemoryNurse")
 
 public class NurseRepositoryImpl implements NurseRepository {
 
@@ -25,12 +26,16 @@ public class NurseRepositoryImpl implements NurseRepository {
 
     @Override
     public Nurse create(Nurse nurse) {
-        return null;
+        nurses.put(nurse.getNursing_Department(),nurse);
+        Nurse saveNurse = nurses.get(nurse.getNursing_Department());
+        return saveNurse;
     }
 
     @Override
     public Nurse update(Nurse nurse) {
-        return null;
+        nurses.put(nurse.getNursing_Department(),nurse);
+        Nurse saveNurse = nurses.get(nurse.getNursing_Department());
+        return saveNurse;
     }
 
     @Override
@@ -45,7 +50,7 @@ public class NurseRepositoryImpl implements NurseRepository {
     }
 
     @Override
-    public Set<Nurse> getAll() {
-        return null;
+    public Map<String, Nurse> getAll() {
+        return nurses;
     }
 }

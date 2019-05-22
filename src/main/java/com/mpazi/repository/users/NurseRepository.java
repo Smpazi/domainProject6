@@ -3,8 +3,8 @@ package com.mpazi.repository.users;
 import com.mpazi.domain.users.Nurse;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface NurseRepository extends IRepository<Nurse, String> {
-    Set<Nurse> getAll();
+    Map<String, Nurse> getAll();
 }

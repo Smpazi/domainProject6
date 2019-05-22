@@ -2,37 +2,50 @@ package com.mpazi.service.login.impl;
 
 import com.mpazi.domain.login.Role;
 import com.mpazi.repository.login.RoleRepository;
+import com.mpazi.repository.login.impl.RoleRepositoryImpl;
 import com.mpazi.service.login.RoleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
+import java.util.Map;
+@Service  ("ServiceImpRole")
 public class RoleServiceImpl implements RoleService {
 
+    @Autowired
+    @Qualifier("InMemoryRole")
+    private  static RoleServiceImpl service = null;
 
+    RoleRepository repository = RoleRepositoryImpl.getRepository();
+
+    public static RoleServiceImpl getInstance(){
+        if(service == null)
+            service =new RoleServiceImpl();
+        return service;
+    }
     @Override
-    public Set<Role> getAll() {
-        return null;
+    public Map<String, Role> getAll() {
+        return repository.getAll();
     }
 
     @Override
     public Role create(Role role) {
-        return null;
+        return repository.create(role);
     }
 
     @Override
     public Role update(Role role) {
-        return null;
+        return repository.update(role);
     }
 
     @Override
     public void delete(String s) {
 
+        repository.delete(s);
     }
 
     @Override
     public Role read(String s) {
-        return null;
+        return repository.read(s);
     }
 }

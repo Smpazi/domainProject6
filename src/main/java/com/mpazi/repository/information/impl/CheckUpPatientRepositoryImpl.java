@@ -2,18 +2,20 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.CheckUpPatient;
 import com.mpazi.repository.information.CheckUpPatientRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
+@Repository("InMemoryCheckUpPatient")
 
 public class CheckUpPatientRepositoryImpl implements CheckUpPatientRepository {
 
     private  static  CheckUpPatientRepositoryImpl repository = null;
-    private Set<CheckUpPatient> checkUpPatients;
+    private Map<String, CheckUpPatient> checkUpPatients;
 
     private CheckUpPatientRepositoryImpl(){
-        this.checkUpPatients = new HashSet<>();
+        this.checkUpPatients = new HashMap<>();
     }
 
     public static CheckUpPatientRepository getRepository(){
@@ -24,22 +26,31 @@ public class CheckUpPatientRepositoryImpl implements CheckUpPatientRepository {
 
     @Override
     public CheckUpPatient create(CheckUpPatient checkUpPatient) {
-        this.checkUpPatients.add(checkUpPatient);
-        return checkUpPatient;
+        checkUpPatients.put(checkUpPatient.getCheckUp_Id(),checkUpPatient);
+        CheckUpPatient savedCheckUp = checkUpPatients.get(checkUpPatient.getCheckUp_Id());
+        return savedCheckUp;
     }
 
     @Override
     public CheckUpPatient update(CheckUpPatient checkUpPatient) {
-        return null;
+        checkUpPatients.put(checkUpPatient.getCheckUp_Id(),checkUpPatient);
+        CheckUpPatient savedCheckUp = checkUpPatients.get(checkUpPatient.getCheckUp_Id());
+        return savedCheckUp;
     }
 
     @Override
-    public CheckUpPatient read(String s) {
-        return null;
+    public CheckUpPatient read(String id) {
+        CheckUpPatient checkUpPatient = checkUpPatients.get(id);
+        return checkUpPatient;
     }
 
     @Override
-    public void delete(String s) {
-        this.checkUpPatients.remove(s);
+    public void delete(String id) {
+        this.checkUpPatients.remove(id);
+    }
+
+    @Override
+    public Map<String, CheckUpPatient> getAll() {
+        return this.checkUpPatients;
     }
 }

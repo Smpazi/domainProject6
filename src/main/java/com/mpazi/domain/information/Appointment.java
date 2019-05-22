@@ -1,7 +1,10 @@
 package com.mpazi.domain.information;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import java.util.Objects;
 
+@EntityScan
 public class Appointment {
     private String appointmentId,appointmentName;
     private String appointmentDate;

@@ -10,7 +10,7 @@ public class DoctorFactoryTest {
     @Test
     public void getDoctorTest(){
 
-        Doctor doctor = DoctorFactory.getDoctor("Dr. Derek");
+        Doctor doctor = DoctorFactory.getDoctor("D5555");
 
         assertNotNull(doctor.getDoc_practiceNum());
 

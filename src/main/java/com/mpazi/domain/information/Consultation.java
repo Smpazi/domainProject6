@@ -1,5 +1,8 @@
 package com.mpazi.domain.information;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Consultation  {
     private String  consult_description;
 

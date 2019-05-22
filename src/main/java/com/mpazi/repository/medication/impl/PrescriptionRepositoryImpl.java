@@ -2,19 +2,18 @@ package com.mpazi.repository.medication.impl;
 
 import com.mpazi.domain.medication.Prescription;
 import com.mpazi.repository.medication.PrescriptionRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+@Repository("InMemoryPrescription")
 
 public class PrescriptionRepositoryImpl implements PrescriptionRepository {
 
-    int index;
     private  static  PrescriptionRepositoryImpl repository = null;
-    private List<Prescription> prescriptions;
+    private Map<String,Prescription> prescriptions;
 
     private PrescriptionRepositoryImpl(){
-        this.prescriptions = new ArrayList<>();
+        this.prescriptions = new HashMap<>();
     }
 
     public static PrescriptionRepositoryImpl getRepository(){
@@ -23,27 +22,23 @@ public class PrescriptionRepositoryImpl implements PrescriptionRepository {
         return repository;
     }
     @Override
-    public Set<Prescription> getAll() {
-        return null;
+    public Map<String,Prescription> getAll() {
+        return prescriptions;
     }
 
     @Override
     public Prescription create(Prescription prescription) {
-        this.prescriptions.add(prescription);
-        return prescription;
+        prescriptions.put(prescription.getPrescriptionId(),prescription);
+        Prescription savedPre = prescriptions.get(prescription.getPrescriptionId());
+        return savedPre;
     }
 
     @Override
     public Prescription update(Prescription prescription) {
-        return null;
+        prescriptions.put(prescription.getPrescriptionId(),prescription);
+        Prescription savedPre = prescriptions.get(prescription.getPrescriptionId());
+        return savedPre;
     }
-
-   /* @Override
-    public Prescription update(Prescription prescription) {
-        prescriptions.add(prescription);
-        Prescription savedPrescription = prescriptions.get(prescription.getPrescriptionId());
-        return savedPrescription;
-    }*/
 
     @Override
     public void delete(String prescriptionsId) {
@@ -52,7 +47,7 @@ public class PrescriptionRepositoryImpl implements PrescriptionRepository {
 
     @Override
     public Prescription read(String id) {
-        Prescription prescription = prescriptions.get(index);
+        Prescription prescription = prescriptions.get(id);
         return prescription;
     }
 }

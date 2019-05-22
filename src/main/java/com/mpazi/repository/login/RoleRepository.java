@@ -3,9 +3,9 @@ package com.mpazi.repository.login;
 import com.mpazi.domain.login.Role;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface RoleRepository extends IRepository<Role, String> {
-    Set<Role> getAll();
+    Map<String, Role> getAll();
 
 }

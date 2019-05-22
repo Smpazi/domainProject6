@@ -2,18 +2,19 @@ package com.mpazi.repository.information.impl;
 
 import com.mpazi.domain.information.Appointment;
 import com.mpazi.repository.information.AppointmentRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
-
+@Repository("InMemoryAppointment")
 public class AppointmentRepositoryImpl implements AppointmentRepository {
 
     private  static  AppointmentRepositoryImpl repository = null;
-    private Set<Appointment> appointments;
+    private Map<String, Appointment> appointments;
 
     private AppointmentRepositoryImpl(){
-        this.appointments = new HashSet<>();
+        this.appointments =new HashMap<>();
     }
 
     public static AppointmentRepositoryImpl getRepository(){
@@ -24,19 +25,21 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
 
     @Override
     public Appointment create(Appointment appointment) {
-        this.appointments.add(appointment);
-        return appointment;
+        appointments.put(appointment.getAppointmentId(),appointment);
+        Appointment savedAppoinment = appointments.get(appointment.getAppointmentId());
+        return savedAppoinment;
     }
 
     @Override
     public Appointment update(Appointment appointment) {
-        return null;
+        appointments.put(appointment.getAppointmentId(),appointment);
+        return this.appointments.get(appointment.getAppointmentId());
     }
 
     @Override
-    public Appointment read(String s) {
-
-        return null;
+    public Appointment read(String id) {
+        Appointment appointment = appointments.get(id);
+        return appointment;
     }
 
     @Override
@@ -45,7 +48,8 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
     }
 
     @Override
-    public Set<Appointment> getAll() {
-        return null;
+    public Map<String, Appointment> getAll() {
+
+        return this.appointments;
     }
 }

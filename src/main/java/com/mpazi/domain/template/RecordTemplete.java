@@ -1,8 +1,10 @@
 package com.mpazi.domain.template;
 
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class RecordTemplete {
 
     private String templeteId ,templateName, diagnosis;
@@ -66,7 +68,7 @@ public class RecordTemplete {
 
     @Override
     public String toString() {
-        return "RecordTemplete {" +
+        return "RecordTempleteController {" +
                 "TemplateId = " +getTempleteId()+ '\'' +
                 "TimeVisit = " + getTimeVisit() + '\'' +
                 '}';

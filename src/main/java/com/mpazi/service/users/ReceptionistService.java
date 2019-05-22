@@ -3,8 +3,8 @@ package com.mpazi.service.users;
 import com.mpazi.domain.users.Receptionist;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface ReceptionistService extends IService<Receptionist, String> {
-    Set<Receptionist> getAll();
+    Map<String, Receptionist> getAll();
 }

@@ -1,7 +1,9 @@
 package com.mpazi.domain.medication;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class DrugPrescription {
 
     String drugName,drug_prescriptionId;
@@ -39,7 +41,7 @@ public class DrugPrescription {
         String drugType;
         String drugAdvice;
 
-        public Builder drug_prescriptionId(String prescriptionId){
+        public Builder drug_prescriptionId(String drug_prescriptionId){
             this.drug_prescriptionId =drug_prescriptionId;
             return this;
         }
@@ -63,7 +65,7 @@ public class DrugPrescription {
 
     @Override
     public String toString() {
-        return "DrugPrescription {" +
+        return "DrugPrescriptionController {" +
                 "DrugPrescription_Id = " +getDrug_prescriptionId()+ '\'' +
                 "DrugName = " + getDrugName() + '\'' +
                 '}';

@@ -1,12 +1,14 @@
 package com.mpazi.repository.medication.impl;
 
+import com.mpazi.domain.medication.Medication;
 import com.mpazi.domain.medication.Pill;
+import com.mpazi.repository.information.impl.MedicalHistoryRepositoryImpl;
 import com.mpazi.repository.medication.PillRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-
+@Repository("InMemoryPill")
 public class PillRepositoryImpl implements PillRepository {
 
     private  static  PillRepositoryImpl repository = null;
@@ -25,13 +27,16 @@ public class PillRepositoryImpl implements PillRepository {
 
     @Override
     public Pill create(Pill pill) {
-        return null;
+        pillTable.put(pill.getPill_ID(),pill);
+        Pill savedPill = pillTable.get(pill.getPill_ID());
+        return savedPill;
     }
 
     @Override
     public Pill update(Pill pill) {
-
-        return null;
+        pillTable.put(pill.getPill_ID(),pill);
+        Pill savedPill = pillTable.get(pill.getPill_ID());
+        return savedPill;
     }
 
     @Override
@@ -47,7 +52,7 @@ public class PillRepositoryImpl implements PillRepository {
     }
 
     @Override
-    public Set<Pill> getAll() {
-        return null;
+    public Map<String, Pill> getAll() {
+        return pillTable;
     }
 }

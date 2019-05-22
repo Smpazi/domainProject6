@@ -1,5 +1,9 @@
 package com.mpazi.domain.information;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import java.util.Objects;
+@EntityScan
 public class PatientNote {
     private String patientNoteId, patientNoteType;
 
@@ -49,16 +53,16 @@ public class PatientNote {
     }
 
 
-   /* @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        DrugPrescription drugPrescription = (DrugPrescription) o;
-        return drug_prescriptionId.equals(drugPrescription.drug_prescriptionId);
+        PatientNote patientNote = (PatientNote) o;
+        return patientNoteId.equals(patientNote.patientNoteId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(drug_prescriptionId);
-    }*/
+        return Objects.hash(patientNoteId);
+    }
 }

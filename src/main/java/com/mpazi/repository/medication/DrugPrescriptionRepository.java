@@ -3,9 +3,9 @@ package com.mpazi.repository.medication;
 import com.mpazi.domain.medication.DrugPrescription;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface DrugPrescriptionRepository extends IRepository<DrugPrescription, String> {
-    Set<DrugPrescription> getAll();
+    Map<String, DrugPrescription> getAll();
 
 }

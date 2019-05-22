@@ -9,7 +9,7 @@ public class RegistrationFactory {
 
     public static Registration getRegistration(Map<String, String> values){
         return new Registration.Builder()
-                .reg_Id(values.get(Misc.generateId()))
+                .reg_Id(values.get("Reg_ID"))
                 .staffName(values.get("StaffName"))
                 .build();
 

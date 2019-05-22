@@ -1,19 +1,18 @@
 package com.mpazi.domain.users;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 public class Doctor {
 
     private String doc_practiceNum;
-
     private ClinicEmployee clinicEmployee = new ClinicEmployee();
 
     private Doctor() {
-
     }
 
     private Doctor (Builder builder){
-        super();
         this.doc_practiceNum =builder.doc_practiceNum;
-
     }
 
     public String getDoc_practiceNum() {

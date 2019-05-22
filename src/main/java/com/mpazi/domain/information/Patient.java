@@ -1,13 +1,15 @@
 package com.mpazi.domain.information;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import java.util.Objects;
 import java.util.Set;
-
+@EntityScan
 public  class  Patient {
     private int phoneNum, age;
     private String patientId,patientName,email,gender,address;
 
-    private Set<MedicalHistory> medicalHistories;
+  //  private Set<MedicalHistory> medicalHistories;
     protected Patient(){}
 
     private Patient(Builder builder){

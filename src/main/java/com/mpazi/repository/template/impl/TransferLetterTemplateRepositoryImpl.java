@@ -2,18 +2,18 @@ package com.mpazi.repository.template.impl;
 
 import com.mpazi.domain.template.TransferLetterTemplate;
 import com.mpazi.repository.template.TranferLetterTemplateRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+@Repository("InMemoryTransferLetterTemplate")
 
 public class TransferLetterTemplateRepositoryImpl implements TranferLetterTemplateRepository {
 
     private  static TransferLetterTemplateRepositoryImpl repository = null;
-    private List<TransferLetterTemplate> transferLetterTemplates;
+    private Map<String, TransferLetterTemplate> transferLetterTemplates;
 
     private TransferLetterTemplateRepositoryImpl(){
-        this.transferLetterTemplates = new ArrayList<>();
+        this.transferLetterTemplates = new HashMap<>();
     }
 
     public static TransferLetterTemplateRepositoryImpl getRepository(){
@@ -23,27 +23,31 @@ public class TransferLetterTemplateRepositoryImpl implements TranferLetterTempla
     }
 
     @Override
-    public Set<TransferLetterTemplate> getAll() {
-        return null;
+    public Map<String, TransferLetterTemplate> getAll() {
+        return transferLetterTemplates;
     }
 
     @Override
     public TransferLetterTemplate create(TransferLetterTemplate transferLetterTemplate) {
-        return null;
+        transferLetterTemplates.put(transferLetterTemplate.getTransfer_ID(),transferLetterTemplate);
+        TransferLetterTemplate savedTrans = transferLetterTemplates.get(transferLetterTemplate.getTransfer_ID());
+        return savedTrans;
     }
 
     @Override
     public TransferLetterTemplate update(TransferLetterTemplate transferLetterTemplate) {
-        return null;
-    }
+        transferLetterTemplates.put(transferLetterTemplate.getTransfer_ID(),transferLetterTemplate);
+        TransferLetterTemplate savedTrans = transferLetterTemplates.get(transferLetterTemplate.getTransfer_ID());
+        return savedTrans;    }
 
     @Override
     public void delete(String s) {
-
+        transferLetterTemplates.remove(s);
     }
 
     @Override
     public TransferLetterTemplate read(String s) {
-        return null;
+        TransferLetterTemplate letterTemplate =transferLetterTemplates.get(s);
+        return letterTemplate;
     }
 }

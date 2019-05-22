@@ -2,18 +2,18 @@ package com.mpazi.repository.login.impl;
 
 import com.mpazi.domain.login.Role;
 import com.mpazi.repository.login.RoleRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+@Repository("InMemoryRole")
 
 public class RoleRepositoryImpl implements RoleRepository {
 
     private  static  RoleRepositoryImpl repository = null;
-   private List<Role> roleList;
+   private Map<String, Role> roleList;
 
     private RoleRepositoryImpl(){
-        this.roleList = new ArrayList<>();
+        this.roleList = new HashMap<>();
     }
 
     public static RoleRepositoryImpl getRepository(){
@@ -23,24 +23,28 @@ public class RoleRepositoryImpl implements RoleRepository {
     }
 
     @Override
-    public Set<Role> getAll() {
-        return null;
+    public Map<String, Role> getAll() {
+        return roleList;
     }
 
     @Override
     public Role create(Role role) {
-        this.roleList.add(role);
-        return role;
+        roleList.put(role.getRoleTitle(),role);
+        Role savedRole = roleList.get(role.getRoleTitle());
+        return savedRole;
     }
 
     @Override
     public Role update(Role role) {
-        return null;
+        roleList.put(role.getRoleTitle(),role);
+        Role savedRole = roleList.get(role.getRoleTitle());
+        return savedRole;
     }
 
     @Override
     public Role read(String s) {
-        return null;
+        Role role = roleList.get(s);
+        return role;
     }
 
     @Override

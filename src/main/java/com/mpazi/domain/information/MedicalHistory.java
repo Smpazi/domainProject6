@@ -1,7 +1,9 @@
 package com.mpazi.domain.information;
 
-import java.util.Objects;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import java.util.Objects;
+@EntityScan
 public class MedicalHistory {
     private String medHistory_ID, allegies, cronical_Desease;
 
@@ -52,7 +54,7 @@ public class MedicalHistory {
 
     @Override
     public String toString() {
-        return "MedicalHistory {" +
+        return "MedicalHistoryController {" +
                 "MedHistory_ID= " + getMedHistory_ID() + '\'' +
                 "Allegies = " + getAllegies() + '\'' +
                 "Cronical_Desease= " + getCronical_Desease() + '\'' +

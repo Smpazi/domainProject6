@@ -3,9 +3,9 @@ package com.mpazi.repository.login;
 import com.mpazi.domain.login.Registration;
 import com.mpazi.repository.IRepository;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface RegistrationRepository extends IRepository<Registration, String> {
-    Set<Registration> getAll();
+    Map<String, Registration> getAll();
 
 }

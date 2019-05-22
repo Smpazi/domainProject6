@@ -1,34 +1,50 @@
 package com.mpazi.service.template.impl;
 
 import com.mpazi.domain.template.TransferLetterTemplate;
-import com.mpazi.service.template.TranferLetterTemplateService;
+import com.mpazi.repository.template.TranferLetterTemplateRepository;
+import com.mpazi.repository.template.impl.TransferLetterTemplateRepositoryImpl;
+import com.mpazi.service.template.TransferLetterTemplateService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.Map;
+@Service ("ServiceImpTransferLetterTemplate")
+public class TransferLetterTemplateServiceImpl implements TransferLetterTemplateService {
+    @Autowired
+    @Qualifier("InMemoryTransferLetterTemplate")
+    private  static TransferLetterTemplateServiceImpl service = null;
 
-public class TransferLetterTemplateServiceImpl implements TranferLetterTemplateService {
+    TranferLetterTemplateRepository repository = TransferLetterTemplateRepositoryImpl.getRepository();
 
+    public static TransferLetterTemplateServiceImpl getInstance(){
+        if(service == null)
+            service =new TransferLetterTemplateServiceImpl();
+        return service;
+    }
     @Override
-    public Set<TransferLetterTemplate> getAll() {
-        return null;
+    public Map<String, TransferLetterTemplate> getAll() {
+        return repository.getAll();
     }
 
     @Override
     public TransferLetterTemplate create(TransferLetterTemplate transferLetterTemplate) {
-        return null;
+        return repository.create(transferLetterTemplate);
     }
 
     @Override
     public TransferLetterTemplate update(TransferLetterTemplate transferLetterTemplate) {
-        return null;
+        return repository.update(transferLetterTemplate);
     }
 
     @Override
     public void delete(String s) {
 
+        repository.delete(s);
     }
 
     @Override
     public TransferLetterTemplate read(String s) {
-        return null;
+        return repository.read(s);
     }
 }

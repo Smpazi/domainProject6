@@ -3,9 +3,9 @@ package com.mpazi.service.login;
 import com.mpazi.domain.login.UserPasswordReset;
 import com.mpazi.service.IService;
 
-import java.util.Set;
+import java.util.Map;
 
 public interface UserPasswordResetService extends IService<UserPasswordReset, String> {
-    Set<UserPasswordReset> getAll();
+    Map<String, UserPasswordReset> getAll();
 
 }
