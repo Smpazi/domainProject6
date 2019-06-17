@@ -39,7 +39,7 @@ public class PatientControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/patient";
 
-    @Ignore
+    @Test
     public void testGetAllPatient() {
         HttpHeaders headers = new HttpHeaders();
 
@@ -49,7 +49,7 @@ public class PatientControllerTest {
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void testGetPatientById() {
         patient = restTemplate.getForObject(baseURL + "/patient/1", Patient.class);
         System.out.println(patient.getPatientId());
@@ -64,7 +64,7 @@ public class PatientControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdatePatient() {
         int id = 1;
         patient = restTemplate.getForObject(baseURL + "/patient/" + id, Patient.class);
@@ -74,7 +74,7 @@ public class PatientControllerTest {
         assertNotNull(updatedPatient);
     }
 
-    @Ignore
+    @Test
     public void testDeletePatient() {
         int id = 2;
         Patient patient = restTemplate.getForObject(baseURL + "/patient/" + id, Patient.class);

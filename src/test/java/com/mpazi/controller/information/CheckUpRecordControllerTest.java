@@ -42,7 +42,7 @@ public class CheckUpRecordControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/checkUpRecord";
 
-    @Ignore
+    @Test
     public void testGetAllCheckUpRecord() {
         HttpHeaders headers = new HttpHeaders();
 
@@ -52,7 +52,7 @@ public class CheckUpRecordControllerTest {
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void testGetCheckUpRecordById() {
         checkUpRecord = restTemplate.getForObject(baseURL + "/checkUpRecord/1", CheckUpRecord.class);
         System.out.println(checkUpRecord.getCheckUpRecordId());
@@ -67,7 +67,7 @@ public class CheckUpRecordControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdateCheckUpRecord() {
         int id = 1;
         checkUpRecord = restTemplate.getForObject(baseURL + "/checkUpRecord/" + id, CheckUpRecord.class);
@@ -77,7 +77,7 @@ public class CheckUpRecordControllerTest {
         assertNotNull(updatedCheckUpRecord);
     }
 
-    @Ignore
+    @Test
     public void testDeleteCheckUpRecord() {
         int id = 2;
         CheckUpRecord checkUpRecord = restTemplate.getForObject(baseURL + "/checkUpRecord/" + id, CheckUpRecord.class);

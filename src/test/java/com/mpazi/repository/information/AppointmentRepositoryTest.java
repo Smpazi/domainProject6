@@ -40,12 +40,12 @@ public class AppointmentRepositoryTest {
 
     }
 
+
     @Test
     public void create() {
         Appointment created = this.repository.create(appointment);
         System.out.println("In create, created = " + created);
         repository.create(created);
-
         Assert.assertSame(created, this.appointment);
 
     }

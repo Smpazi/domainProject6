@@ -19,7 +19,6 @@ import java.util.Map;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNotNull;
-import static org.junit.Assert.*;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
 public class NotificationControllerTest {
@@ -42,8 +41,8 @@ public class NotificationControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/notification";
 
-    @Ignore
-    public void testGetAllNotification() {
+    @Test
+        public void testGetAllNotification() {
         HttpHeaders headers = new HttpHeaders();
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
@@ -52,7 +51,7 @@ public class NotificationControllerTest {
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void testGetNotificationById() {
         notification = restTemplate.getForObject(baseURL + "/notification/1", Notification.class);
         System.out.println(notification.getNotificationID());
@@ -67,7 +66,7 @@ public class NotificationControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdateNotification() {
         int id = 1;
         notification = restTemplate.getForObject(baseURL + "/notification/" + id, Notification.class);
@@ -77,7 +76,7 @@ public class NotificationControllerTest {
         assertNotNull(updatedNotification);
     }
 
-    @Ignore
+    @Test
     public void testDeleteNotification() {
         int id = 2;
         Notification notification = restTemplate.getForObject(baseURL + "/notification/" + id, Notification.class);

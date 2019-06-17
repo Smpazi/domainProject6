@@ -44,7 +44,7 @@ public class CheckUpPatientControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/checkUpPatient";
 
-    @Ignore
+    @Test
     public void testGetAllCheckUpPatient() {
         HttpHeaders headers = new HttpHeaders();
 
@@ -54,7 +54,7 @@ public class CheckUpPatientControllerTest {
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void testGetCheckUpPatientById() {
         checkUpPatient = restTemplate.getForObject(baseURL + "/checkUpPatient/1", CheckUpPatient.class);
         System.out.println(checkUpPatient.getCheckUp_Id());
@@ -69,7 +69,7 @@ public class CheckUpPatientControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdateCheckUpPatient() {
         int id = 1;
         checkUpPatient = restTemplate.getForObject(baseURL + "/checkUpPatient/" + id, CheckUpPatient.class);
@@ -79,7 +79,7 @@ public class CheckUpPatientControllerTest {
         assertNotNull(updatedStudent);
     }
 
-    @Ignore
+    @Test
     public void testDeleteAppointment() {
         int id = 2;
         CheckUpPatient checkUpPatient = restTemplate.getForObject(baseURL + "/checkUpPatient/" + id, CheckUpPatient.class);

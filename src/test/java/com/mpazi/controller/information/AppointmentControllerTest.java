@@ -40,7 +40,7 @@ public class AppointmentControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/appointment";
 
-    @Ignore
+    @Test
     public void testGetAllAppointment() {
         HttpHeaders headers = new HttpHeaders();
 
@@ -65,7 +65,7 @@ public class AppointmentControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdateAppointment() {
         int id = 1;
          appointment = restTemplate.getForObject(baseURL + "/appointment/" + id, Appointment.class);
@@ -75,7 +75,7 @@ public class AppointmentControllerTest {
         assertNotNull(updatedStudent);
     }
 
-    @Ignore
+    @Test
     public void testDeleteAppointment() {
         int id = 2;
         Appointment appointment = restTemplate.getForObject(baseURL + "/appointment/" + id, Appointment.class);

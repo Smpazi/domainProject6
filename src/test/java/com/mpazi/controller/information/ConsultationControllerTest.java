@@ -37,7 +37,7 @@ public class ConsultationControllerTest {
     private TestRestTemplate restTemplate;
     private String baseURL="http://localhost:8080/consultation";
 
-    @Ignore
+    @Test
     public void testGetAllConsultation() {
         HttpHeaders headers = new HttpHeaders();
 
@@ -47,7 +47,7 @@ public class ConsultationControllerTest {
         assertNotNull(response.getBody());
     }
 
-    @Ignore
+    @Test
     public void testGetConsultationById() {
         consultation = restTemplate.getForObject(baseURL + "/consultation/1", Consultation.class);
         System.out.println(consultation.getConsult_description());
@@ -62,7 +62,7 @@ public class ConsultationControllerTest {
         assertNotNull(postResponse.getBody());
     }
 
-    @Ignore
+    @Test
     public void testUpdateConsultation() {
         int id = 1;
         consultation = restTemplate.getForObject(baseURL + "/consultation/" + id, Consultation.class);
@@ -72,8 +72,8 @@ public class ConsultationControllerTest {
         assertNotNull(updatedConsultation);
     }
 
-    @Ignore
-    public void testDeleteConsultation() {
+    @Test
+      public void testDeleteConsultation() {
         int id = 2;
         Consultation consultation = restTemplate.getForObject(baseURL + "/consultation/" + id, Consultation.class);
         assertNotNull(consultation);

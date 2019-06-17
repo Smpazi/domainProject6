@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2e76268c-03e2-47f3-9d9d-7d348c27e30a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/PillController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Nurse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/PillFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/NurseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/NurseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ReceptionistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/factory/users/factory/ReceptionistFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/PillRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/impl/PillRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/impl/ClinicEmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/impl/ClinicEmployeeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/PillService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/PillServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpPatientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpPatientControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpRecordControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpRecordControllerTest.java" afterDir="false" />
@@ -21,45 +10,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/MedicalHistoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/MedicalHistoryControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientNoteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientNoteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/LoginAccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/LoginAccountControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/RegistrationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/RegistrationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/RoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/RoleControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/UserPasswordResetControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/UserPasswordResetControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/DrugPrescriptionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/DrugPrescriptionControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicationControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicineControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicineControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PillControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PrescriptionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PrescriptionControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/RecordTempleteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/RecordTempleteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/ReferralLetterTempleteControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/ReferralLetterTempleteControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/SearchPatientControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/SearchPatientControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TransferLetterTemplateControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TransferLetterTemplateControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TreatmentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TreatmentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ClinicEmployeeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ClinicEmployeeControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/DoctorControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/DoctorControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/NurseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/NurseControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ReceptionistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ReceptionistControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/PillFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/PillRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/NurseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/NurseRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ReceptionistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/users/ReceptionistRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/service/medication/PillServiceImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/service/users/NurseServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/service/users/NurseServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/service/users/ReceptionistServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/service/users/ReceptionistServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/PillController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/medication/Pill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/domain/users/Nurse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/medication/factory/PillFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/NurseFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/NurseFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/ReceptionistFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/factory/users/factory/ReceptionistFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/medication/PillRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/medication/impl/PillRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/PillService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/PillServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/information/AppointmentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mpazi/repository/information/AppointmentRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/AppointmentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/AppointmentControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/CheckUpPatientControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/CheckUpPatientControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/CheckUpRecordControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/CheckUpRecordControllerTest.class" afterDir="false" />
@@ -67,32 +18,6 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/MedicalHistoryControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/MedicalHistoryControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/NotificationControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/NotificationControllerTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/PatientControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/PatientControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/PatientNoteControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/information/PatientNoteControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/LoginAccountControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/LoginAccountControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/RegistrationControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/RegistrationControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/RoleControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/RoleControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/UserPasswordResetControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/login/UserPasswordResetControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/DrugPrescriptionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/DrugPrescriptionControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/MedicationControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/MedicationControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/MedicineControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/MedicineControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/PillControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/PrescriptionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/medication/PrescriptionControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/RecordTempleteControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/RecordTempleteControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/ReferralLetterTempleteControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/ReferralLetterTempleteControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/SearchPatientControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/SearchPatientControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/TransferLetterTemplateControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/TransferLetterTemplateControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/TreatmentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/template/TreatmentControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/ClinicEmployeeControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/ClinicEmployeeControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/DoctorControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/DoctorControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/NurseControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/NurseControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/ReceptionistControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/controller/users/ReceptionistControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/factory/medication/factory/PillFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/medication/PillRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/users/NurseRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/users/NurseRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/users/ReceptionistRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/repository/users/ReceptionistRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/service/medication/PillServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/service/users/NurseServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/service/users/NurseServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mpazi/service/users/ReceptionistServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mpazi/service/users/ReceptionistServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -122,6 +47,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/information/Appointment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/information/factory/AppointmentFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/information/factory/AppointmentFactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/controller/information/AppointmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/PatientManagementApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -132,15 +93,6 @@
                 <element signature="e#439#440#0" expanded="true" />
                 <element signature="e#510#511#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -164,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/ReferralLetterTemplateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/controller/template/ReferralLetterTempleteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/controller/template/SearchPatientController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/controller/template/TransferLetterTemplateController.java" />
@@ -177,13 +128,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicineRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/template/ReferralLetterTemplateRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/AppointmentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpPatientControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpRecordControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/ConsultationControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/MedicalHistoryControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientNoteControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/LoginAccountControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/login/RegistrationControllerTest.java" />
@@ -215,6 +159,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/PillRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mpazi/repository/users/impl/ClinicEmployeeRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpPatientControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpRecordControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/ConsultationControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/MedicalHistoryControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mpazi/repository/information/AppointmentRepositoryTest.java" />
       </list>
     </option>
   </component>
@@ -250,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,7 +242,45 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mpazi" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="information" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainProject6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mpazi" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
@@ -327,7 +316,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mpazi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainProject6" type="b2602c69:ProjectViewProjectNode" />
@@ -336,13 +325,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mpazi" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="information" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -358,11 +348,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mpazi/controller" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -409,38 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.mpazi.controller in domainProject6">
-    <configuration name="AppointmentControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domainProject6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mpazi.controller.information.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.controller.information" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.controller.information.AppointmentControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppointmentControllerTest.testGetAllAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domainProject6" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mpazi.controller.information.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.mpazi.controller.information" />
-      <option name="MAIN_CLASS_NAME" value="com.mpazi.controller.information.AppointmentControllerTest" />
-      <option name="METHOD_NAME" value="testGetAllAppointment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.PatientManagementApp">
     <configuration name="com.mpazi.controller in domainProject6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainProject6" />
       <extension name="coverage">
@@ -455,6 +417,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.mpazi.factory in domainProject6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domainProject6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mpazi.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mpazi.factory" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.mpazi.repository in domainProject6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainProject6" />
       <extension name="coverage">
@@ -464,6 +440,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.mpazi.repository" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.mpazi.service in domainProject6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="domainProject6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mpazi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.mpazi.service" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -484,11 +474,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.mpazi.controller in domainProject6" />
-        <item itemvalue="JUnit.AppointmentControllerTest.testGetAllAppointment" />
-        <item itemvalue="JUnit.AppointmentControllerTest" />
         <item itemvalue="Spring Boot.PatientManagementApp" />
         <item itemvalue="JUnit.com.mpazi.repository in domainProject6" />
+        <item itemvalue="JUnit.com.mpazi.service in domainProject6" />
+        <item itemvalue="JUnit.com.mpazi.factory in domainProject6" />
+        <item itemvalue="JUnit.com.mpazi.controller in domainProject6" />
       </list>
     </recent_temporary>
   </component>
@@ -540,50 +530,54 @@
       <workItem from="1558375370058" duration="8556000" />
       <workItem from="1558441211092" duration="32369000" />
       <workItem from="1558474485644" duration="77000" />
-      <workItem from="1558507012348" duration="10096000" />
+      <workItem from="1558507012348" duration="13154000" />
+      <workItem from="1559148627449" duration="1859000" />
+      <workItem from="1559634753948" duration="2841000" />
+      <workItem from="1559753365721" duration="1087000" />
+      <workItem from="1560769188356" duration="99000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReceptionistServiceImplTest_read - 2019.05.22 at 10h 37m 32s.xml">
-      <configuration name="ReceptionistServiceImplTest.read" configurationId="JUnit" />
+    <history-entry file="CheckUpRecordControllerTest - 2019.05.22 at 11h 51m 58s.xml">
+      <configuration name="CheckUpRecordControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReceptionistServiceImplTest_update - 2019.05.22 at 10h 37m 58s.xml">
-      <configuration name="ReceptionistServiceImplTest.update" configurationId="JUnit" />
+    <history-entry file="ConsultationControllerTest - 2019.05.22 at 11h 53m 05s.xml">
+      <configuration name="ConsultationControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ReceptionistServiceImplTest_update - 2019.05.22 at 10h 38m 53s.xml">
-      <configuration name="ReceptionistServiceImplTest.update" configurationId="JUnit" />
+    <history-entry file="MedicalHistoryControllerTest - 2019.05.22 at 11h 53m 59s.xml">
+      <configuration name="MedicalHistoryControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_mpazi_repository_in_domainProject6 - 2019.05.22 at 10h 39m 31s.xml">
-      <configuration name="com.mpazi.repository in domainProject6" configurationId="JUnit" />
+    <history-entry file="NotificationControllerTest - 2019.05.22 at 11h 55m 42s.xml">
+      <configuration name="NotificationControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PillRepositoryTest_read - 2019.05.22 at 10h 40m 49s.xml">
-      <configuration name="PillRepositoryTest.read" configurationId="JUnit" />
+    <history-entry file="PatientControllerTest - 2019.05.22 at 11h 56m 45s.xml">
+      <configuration name="PatientControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PillRepositoryTest_read - 2019.05.22 at 10h 42m 51s.xml">
-      <configuration name="PillRepositoryTest.read" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_mpazi_controller_in_domainProject6 - 2019.05.22 at 10h 51m 12s.xml">
+    <history-entry file="com_mpazi_controller_in_domainProject6 - 2019.05.22 at 11h 57m 54s.xml">
       <configuration name="com.mpazi.controller in domainProject6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_mpazi_service_in_domainProject6 - 2019.05.22 at 10h 55m 06s.xml">
-      <configuration name="com.mpazi.service in domainProject6" configurationId="JUnit" />
+    <history-entry file="com_mpazi_factory_in_domainProject6 - 2019.05.22 at 11h 58m 55s.xml">
+      <configuration name="com.mpazi.factory in domainProject6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_mpazi_repository_in_domainProject6 - 2019.05.22 at 10h 56m 07s.xml">
+    <history-entry file="com_mpazi_repository_in_domainProject6 - 2019.05.22 at 11h 59m 19s.xml">
       <configuration name="com.mpazi.repository in domainProject6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppointmentControllerTest - 2019.05.22 at 11h 31m 21s.xml">
-      <configuration name="AppointmentControllerTest" configurationId="JUnit" />
+    <history-entry file="com_mpazi_service_in_domainProject6 - 2019.05.22 at 11h 59m 44s.xml">
+      <configuration name="com.mpazi.service in domainProject6" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_mpazi_repository_in_domainProject6 - 2019.05.22 at 12h 00m 46s.xml">
+      <configuration name="com.mpazi.repository in domainProject6" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365688000" />
+    <option name="totallyTimeSpent" value="374632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -591,6 +585,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32569557" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3207856" />
@@ -605,6 +600,8 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32405892" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Flutter Inspector" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -614,8 +611,8 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.56278366" />
       <window_info anchor="right" id="Event Log" order="8" side_tool="true" weight="0.32829046" />
-      <window_info anchor="right" id="Bean Validation" order="9" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32980332" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32980332" />
+      <window_info anchor="right" id="Bean Validation" order="10" side_tool="true" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,22 +622,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/information/AppointmentRepositoryTest.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/information/factory/PatientNoteFactoryTest.java</url>
           <line>11</line>
           <properties />
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicineControllerTest.java</url>
@@ -664,143 +649,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/DrugPrescriptionControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicationControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/MedicineControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PrescriptionControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/RecordTempleteControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/ReferralLetterTempleteControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/SearchPatientControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TransferLetterTemplateControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/template/TreatmentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ClinicEmployeeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/DoctorControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/NurseControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/users/ReceptionistControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/PillRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/PillRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicationRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -815,16 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PillControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/medication/PillControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/DrugPrescriptionRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -839,13 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/service/medication/PillServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/service/medication/PillServiceImplTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/users/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -895,24 +729,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/PillFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/impl/PillRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/medication/factory/PillFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/impl/PillRepositoryImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/medication/impl/MedicineRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-123">
@@ -924,13 +742,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/PillServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/PillServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/MedicineFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -938,13 +750,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/PillFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/medication/factory/PillFactoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/users/factory/ReceptionistFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1016,44 +822,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/PillRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/medication/Pill.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/PillRepositoryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/medication/MedicineRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/controller/information/AppointmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/information/impl/AppointmentRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1071,6 +845,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpPatientControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/CheckUpRecordControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/MedicalHistoryControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1010">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/ConsultationControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/PatientControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/NotificationControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/service/login/LoginAccountServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/repository/information/impl/AppointmentRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/repository/information/AppointmentRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/domain/information/Appointment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/factory/information/factory/AppointmentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/factory/information/factory/AppointmentFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/controller/information/AppointmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mpazi/PatientManagementApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1081,13 +968,6 @@
             <element signature="e#439#440#0" expanded="true" />
             <element signature="e#510#511#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mpazi/controller/information/AppointmentControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
