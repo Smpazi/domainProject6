@@ -38,6 +38,7 @@ public class ClinicEmployeeRepositoryImpl implements ClinicEmployeeRepository {
         return savedTrans;
     }
 
+
     @Override
     public ClinicEmployee read(String s) {
         ClinicEmployee clinicEmployee = clinicEmployeeList.get(s);

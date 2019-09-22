@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 @Repository("InMemoryAppointment")
 public class AppointmentRepositoryImpl implements AppointmentRepository {
@@ -17,6 +19,7 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
         this.appointments =new HashMap<>();
     }
 
+
     public static AppointmentRepositoryImpl getRepository(){
         if(repository == null)
             repository = new AppointmentRepositoryImpl();
@@ -26,8 +29,8 @@ public class AppointmentRepositoryImpl implements AppointmentRepository {
     @Override
     public Appointment create(Appointment appointment) {
         appointments.put(appointment.getAppointmentId(),appointment);
-        Appointment savedAppoinment = appointments.get(appointment.getAppointmentId());
-        return savedAppoinment;
+        //Appointment savedAppoinment = appointments.get(appointment.getAppointmentId());
+        return appointment;
     }
 
     @Override
