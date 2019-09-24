@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping(value = {"/"})
+    @RequestMapping(value = {"/","/pms"})
     public ResponseEntity<String> home(){
-        return new ResponseEntity<>("Patient Management System!!", HttpStatus.OK);
+        return new ResponseEntity<>("Patient Management System ", HttpStatus.OK);
     }
 }

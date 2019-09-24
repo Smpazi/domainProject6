@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 @Repository("InMemoryRole")
-
 public class RoleRepositoryImpl implements RoleRepository {
 
     private  static  RoleRepositoryImpl repository = null;

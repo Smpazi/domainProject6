@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 import java.util.Objects;
 @RestController
-@RequestMapping("/clinicEmployee")
+@RequestMapping("/pms/check/clinicEmployee")
 public class ClinicEmployeeController {
     @Autowired
     @Qualifier("ServiceImpClinicEmployee")

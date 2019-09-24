@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/role")
+@RequestMapping("/pms/check/role")
 public class RoleController {
     @Autowired
     @Qualifier("ServiceImpRole")

@@ -1,6 +1,7 @@
 package com.mpazi.security;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+@Configuration
 public class PatientManagementSecurity extends WebSecurityConfigurerAdapter {
 
     private static final String USER_ROLE = "USER";
@@ -18,11 +20,11 @@ public class PatientManagementSecurity extends WebSecurityConfigurerAdapter {
             throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("user")
-                .password(encoder().encode("password"))
+                .withUser("Receptionist")
+                .password(encoder().encode("recep001"))
                 .roles(USER_ROLE)
                 .and()
-                .withUser("admin")
+                .withUser("Admin")
                 .password(encoder().encode("admin"))
                 .roles(USER_ROLE, ADMIN_ROLE);
     }
@@ -33,7 +35,7 @@ public class PatientManagementSecurity extends WebSecurityConfigurerAdapter {
                 .httpBasic()
                 .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/role/**/create/**").hasRole(ADMIN_ROLE)
+                .antMatchers(HttpMethod.POST, "pms/check/**/create/**").hasRole(ADMIN_ROLE)
                 .and()
                 .csrf().disable()
                 .formLogin().disable();

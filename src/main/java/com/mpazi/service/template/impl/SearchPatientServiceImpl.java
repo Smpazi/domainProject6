@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service ("ServiceImpSearchPatient")
 public class SearchPatientServiceImpl implements SearchPatientService {
-    @Autowired
     @Qualifier("InMemorySearchPatient")
     private  static SearchPatientServiceImpl service = null;
 

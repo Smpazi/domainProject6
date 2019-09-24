@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/receptionist")
+@RequestMapping("/pms/receptionist")
 public class ReceptionistController {
     @Autowired
     @Qualifier("ServiceImpReceptionist")
@@ -31,7 +31,6 @@ public class ReceptionistController {
     @ResponseBody
     public void delete(@PathVariable String id) {
         service.delete(id);
-
     }
 
     @GetMapping("/read/{id}")

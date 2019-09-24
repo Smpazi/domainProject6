@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service ("ServiceImpTransferLetterTemplate")
 public class TransferLetterTemplateServiceImpl implements TransferLetterTemplateService {
-    @Autowired
     @Qualifier("InMemoryTransferLetterTemplate")
     private  static TransferLetterTemplateServiceImpl service = null;
 

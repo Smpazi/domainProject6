@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service("ServiceImpRecordTemplete")
 public class RecordTempleteServiceImpl implements RecordTempleteService {
-    @Autowired
+
     @Qualifier("InMemoryRecordTemplete")
     private  static RecordTempleteServiceImpl service = null;
 

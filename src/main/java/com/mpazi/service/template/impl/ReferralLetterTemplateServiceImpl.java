@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service ("ServiceImpReferralLetterTemplate")
 public class ReferralLetterTemplateServiceImpl implements ReferralLetterTemplateService {
-    @Autowired
     @Qualifier("InMemoryReferralLetterTemplate")
     private  static ReferralLetterTemplateServiceImpl service = null;
 

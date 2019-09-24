@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/medication")
+@RequestMapping("/pms/medication")
 public class MedicationController {
     @Autowired
     @Qualifier("ServiceImpMedication")
