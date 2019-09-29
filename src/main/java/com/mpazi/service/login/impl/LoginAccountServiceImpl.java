@@ -12,7 +12,6 @@ import java.util.Map;
 @Service ("ServiceImpLoginAccount")
 public class LoginAccountServiceImpl implements LoginAccountService {
 
-    @Autowired
     @Qualifier("InMemoryLoginAccount")
     private  static LoginAccountServiceImpl service = null;
 

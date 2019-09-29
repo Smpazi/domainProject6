@@ -12,7 +12,6 @@ import java.util.Map;
 @Service  ("ServiceImpUserPasswordReset")
 public class UserPasswordResetServiceImpl implements UserPasswordResetService {
 
-    @Autowired
     @Qualifier("InMemoryUserPasswordReset")
     private  static UserPasswordResetServiceImpl service = null;
 

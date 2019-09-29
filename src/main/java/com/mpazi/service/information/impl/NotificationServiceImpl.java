@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service("ServiceImpNotification")
 public class NotificationServiceImpl implements NotificationService {
-    @Autowired
+
     @Qualifier("InMemoryNotification")
     private  static NotificationServiceImpl service = null;
 

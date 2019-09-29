@@ -12,7 +12,6 @@ import java.util.Map;
 @Service ("ServiceImpRegistration")
 public class RegistrationServiceImpl implements RegistrationService {
 
-    @Autowired
     @Qualifier("InMemoryRegistration")
     private  static RegistrationServiceImpl service = null;
 

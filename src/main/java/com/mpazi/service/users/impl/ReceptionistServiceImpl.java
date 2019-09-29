@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service  ("ServiceImpReceptionist")
 public class ReceptionistServiceImpl implements ReceptionistService {
-    @Autowired
+
     @Qualifier("InMemoryReceptionist")
     private  static ReceptionistServiceImpl service = null;
 

@@ -13,7 +13,6 @@ import java.util.Map;
 @Service ("ServiceImpAppointment")
 public class AppointmentServiceImpl implements AppointmentService {
 
-    @Autowired
     @Qualifier("InMemoryAppointment")
     private  static AppointmentServiceImpl service = null;
 

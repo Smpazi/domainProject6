@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 @Service ("ServiceImpTreatment")
 public class TreatmentServiceImpl implements TreatmentService {
-    @Autowired
+
     @Qualifier("InMemoryTreatment")
     private  static TreatmentServiceImpl service = null;
 

@@ -12,7 +12,6 @@ import java.util.Map;
 @Service  ("ServiceImpRole")
 public class RoleServiceImpl implements RoleService {
 
-    @Autowired
     @Qualifier("InMemoryRole")
     private  static RoleServiceImpl service = null;
 

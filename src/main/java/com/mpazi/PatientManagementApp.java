@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class PatientManagementApp {
+public class  PatientManagementApp {
 
     @Bean
     public RestTemplate restTemplate() {

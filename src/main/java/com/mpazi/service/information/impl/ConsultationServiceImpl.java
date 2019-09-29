@@ -12,7 +12,6 @@ import java.util.Map;
 @Service ("ServiceImpConsultation")
 public class ConsultationServiceImpl implements ConsultationService {
 
-    @Autowired
     @Qualifier("InMemoryConsultation")
     private  static ConsultationServiceImpl service = null;
 

@@ -2,42 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e76268c-03e2-47f3-9d9d-7d348c27e30a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/com/mpazi/security/PatientManagementSecurity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/login/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/login/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/DrugPrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/DrugPrescriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/MedicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/MedicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/MedicineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/PrescriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/medication/PrescriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/ClinicEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/ClinicEmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/NurseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/NurseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/controller/users/ReceptionistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/impl/RoleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/repository/login/impl/RoleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/PatientManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/PatientManagementApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/security/PatientManagementSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/security/PatientManagementSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/RecordTempleteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/RecordTempleteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/ReferralLetterTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/ReferralLetterTemplateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/SearchPatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/SearchPatientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/TransferLetterTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/TransferLetterTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/CheckUpPatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/CheckUpPatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/CheckUpRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/CheckUpRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/ConsultationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/ConsultationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/MedicalHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/MedicalHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/NotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/NotificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/PatientNoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/PatientNoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/information/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/LoginAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/LoginAccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/RegistrationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/RegistrationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/UserPasswordResetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/login/impl/UserPasswordResetServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/DrugPrescriptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/DrugPrescriptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/MedicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/MedicationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/MedicineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/MedicineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/PrescriptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/medication/impl/PrescriptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/TreatmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/template/impl/TreatmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/ClinicEmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/ClinicEmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/NurseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/NurseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/ReceptionistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mpazi/service/users/impl/ReceptionistServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/login/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/login/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/DrugPrescriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/DrugPrescriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/MedicationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/MedicationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/MedicineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/MedicineController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/PrescriptionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/medication/PrescriptionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/ClinicEmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/ClinicEmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/DoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/NurseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/NurseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/ReceptionistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/controller/users/ReceptionistController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/impl/RoleRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/repository/login/impl/RoleRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/RecordTempleteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/RecordTempleteServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/ReferralLetterTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/ReferralLetterTemplateServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/SearchPatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/SearchPatientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/TransferLetterTemplateServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/TransferLetterTemplateServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/security/PatientManagementSecurity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/security/PatientManagementSecurity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/AppointmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/AppointmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/CheckUpPatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/CheckUpPatientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/CheckUpRecordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/CheckUpRecordServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/ConsultationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/ConsultationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/MedicalHistoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/MedicalHistoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/NotificationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/NotificationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/PatientNoteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/PatientNoteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/information/impl/PatientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/LoginAccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/LoginAccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/RegistrationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/RegistrationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/UserPasswordResetServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/login/impl/UserPasswordResetServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/DrugPrescriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/DrugPrescriptionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/MedicationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/MedicationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/MedicineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/MedicineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/PrescriptionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/medication/impl/PrescriptionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/TreatmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/template/impl/TreatmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/ClinicEmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/ClinicEmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/DoctorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/DoctorServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/NurseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/NurseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/ReceptionistServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mpazi/service/users/impl/ReceptionistServiceImpl.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,10 +114,10 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -123,11 +136,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mpazi" />
       <recent name="com.mpazi.controller.information" />
       <recent name="com.mpazi.repository.template" />
       <recent name="com.mpazi.repository.medication" />
       <recent name="com.mpazi.factory.template.factory" />
-      <recent name="com.mpazi.factory.medication.factory" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mpazi.factory.login.factory" />
@@ -321,7 +334,9 @@
       <workItem from="1569192789506" duration="5633000" />
       <workItem from="1569314330814" duration="78000" />
       <workItem from="1569314995237" duration="4391000" />
-      <workItem from="1569319475773" duration="858000" />
+      <workItem from="1569319475773" duration="1740000" />
+      <workItem from="1569350028836" duration="5034000" />
+      <workItem from="1569711377665" duration="4338000" />
     </task>
     <servers />
   </component>
@@ -368,81 +383,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>domainproject</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

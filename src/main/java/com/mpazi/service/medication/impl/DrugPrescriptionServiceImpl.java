@@ -12,7 +12,6 @@ import java.util.Map;
 @Service ("ServiceImpDrugPrescription")
 public class DrugPrescriptionServiceImpl implements DrugPrescriptionService {
 
-    @Autowired
     @Qualifier("InMemoryDrugPrescription")
     private  static DrugPrescriptionServiceImpl service = null;
 

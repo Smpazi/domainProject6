@@ -13,7 +13,7 @@ import java.util.Map;
 @Service("ServiceImpCheckUpRecord")
 public class CheckUpRecordServiceImpl implements CheckUpRecordService {
 
-    @Autowired
+
     @Qualifier("InMemoryCheckUpRecord")
     private  static CheckUpRecordServiceImpl service = null;
 
